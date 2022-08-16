@@ -1,0 +1,18 @@
+write to flash
+Open file DONE
+Parse file DONE
+Enable configuration: DONE
+SRAM erase: DONE
+Detail: 
+Jedec ID          : c8
+memory type       : 40
+memory capacity   : 16
+EDID + CFD length : c8
+EDID              : 1640
+CFD               : 
+flash chip unknown: use basic protection detection
+Erasing: [==============================                    ] 60.00%Erasing: [==================================================] 100.00%
+Done
+Writing: [                                                  ] 0.00%Writing: [=====                                             ] 9.22%Writing: [==========                                        ] 18.35%Writing: [==============                                    ] 27.35%Writing: [===================                               ] 36.48%Writing: [=======================                           ] 45.74%Writing: [============================                      ] 54.70%Writing: [================================                  ] 63.96%Writing: [=====================================             ] 72.96%Writing: [==========================================        ] 82.13%Writing: [==============================================    ] 91.48%Writing: [==================================================] 100.00%
+Done
+Refresh: DONE

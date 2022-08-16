@@ -1,0 +1,657 @@
+INFO:SoC:[1m        __   _ __      _  __  [0m
+INFO:SoC:[1m       / /  (_) /____ | |/_/  [0m
+INFO:SoC:[1m      / /__/ / __/ -_)>  <    [0m
+INFO:SoC:[1m     /____/_/\__/\__/_/|_|  [0m
+INFO:SoC:[1m  Build your hardware, easily![0m
+INFO:SoC:[1m--------------------------------------------------------------------------------[0m
+INFO:SoC:[1mCreating SoC... (2022-07-26 15:16:17)[0m
+INFO:SoC:[1m--------------------------------------------------------------------------------[0m
+INFO:SoC:FPGA device : LFE5U-25F-6BG256C.
+INFO:SoC:System clock: 50.000MHz.
+INFO:SoCBusHandler:Creating Bus Handler...
+INFO:SoCBusHandler:[1m32[0m-bit [1mwishbone[0m Bus, [1m4.0[0mGiB Address Space.
+INFO:SoCBusHandler:Adding [36mreserved[0m Bus Regions...
+INFO:SoCBusHandler:Bus Handler [32mcreated[0m.
+INFO:SoCCSRHandler:Creating CSR Handler...
+INFO:SoCCSRHandler:[1m32[0m-bit CSR Bus, [1m32[0m-bit Aligned, [1m16.0[0mKiB Address Space, [1m2048[0mB Paging, [1mbig[0m Ordering (Up to [1m32[0m Locations).
+INFO:SoCCSRHandler:Adding [36mreserved[0m CSRs...
+INFO:SoCCSRHandler:CSR Handler [32mcreated[0m.
+INFO:SoCIRQHandler:Creating IRQ Handler...
+INFO:SoCIRQHandler:IRQ Handler (up to [1m32[0m Locations).
+INFO:SoCIRQHandler:Adding [36mreserved[0m IRQs...
+INFO:SoCIRQHandler:IRQ Handler [32mcreated[0m.
+INFO:SoC:[1m--------------------------------------------------------------------------------[0m
+INFO:SoC:[1mInitial SoC:[0m
+INFO:SoC:[1m--------------------------------------------------------------------------------[0m
+INFO:SoC:[1m32[0m-bit [1mwishbone[0m Bus, [1m4.0[0mGiB Address Space.
+INFO:SoC:[1m32[0m-bit CSR Bus, [1m32[0m-bit Aligned, [1m16.0[0mKiB Address Space, [1m2048[0mB Paging, [1mbig[0m Ordering (Up to [1m32[0m Locations).
+INFO:SoC:IRQ Handler (up to [1m32[0m Locations).
+INFO:SoC:[1m--------------------------------------------------------------------------------[0m
+INFO:SoC:Controller [4mctrl[0m [32madded[0m.
+INFO:SoC:CPU [4mNone[0m [32madded[0m.
+INFO:SoC:CPU [4mNone[0m [36madding[0m IO Region [1m0[0m at [1m0x00000000[0m (Size: [1m0x100000000[0m).
+INFO:SoCBusHandler:[4mio0[0m Region [32madded[0m at Origin: [1m0x00000000[0m, Size: [1m0x100000000[0m, Mode: [1mRW[0m, Cached: [1mFalse[0m Linker: [1mFalse[0m.
+INFO:ECP5PLL:Creating ECP5PLL.
+INFO:ECP5PLL:Registering [1mSingle Ended[0m [1mClkIn[0m of [1m25.00MHz[0m.
+INFO:ECP5PLL:Creating [1mClkOut0 sys[0m of [1m50.00MHz[0m (+-10000.00ppm).
+INFO:ECP5PLL:Creating [1mClkOut1 sys_ps[0m of [1m50.00MHz[0m (+-10000.00ppm).
+INFO:SoCBusHandler:[4mmaster0[0m [32madded[0m as Bus Master.
+INFO:SoC:CSR Bridge [4mcsr[0m [32madded[0m.
+INFO:SoCBusHandler:[4mcsr[0m Region [32madded[0m at Origin: [1m0x00000000[0m, Size: [1m0x00010000[0m, Mode: [1mRW[0m, Cached: [1mFalse[0m Linker: [1mFalse[0m.
+INFO:SoCBusHandler:[4mcsr[0m [32madded[0m as Bus Slave.
+INFO:SoCCSRHandler:[4mcsr[0m [32madded[0m as CSR Master.
+INFO:SoCBusHandler:Interconnect: [1mInterconnectPointToPoint[0m ([1m1[0m <-> [1m1[0m).
+INFO:SoCCSRHandler:[4mMMIO_inst[0m CSR [36mallocated[0m at Location [1m0[0m.
+INFO:SoCCSRHandler:[4mctrl[0m CSR [36mallocated[0m at Location [1m1[0m.
+INFO:SoCCSRHandler:[4methphy[0m CSR [36mallocated[0m at Location [1m2[0m.
+INFO:SoCCSRHandler:[4midentifier_mem[0m CSR [36mallocated[0m at Location [1m3[0m.
+INFO:SoC:[1m--------------------------------------------------------------------------------[0m
+INFO:SoC:[1mFinalized SoC:[0m
+INFO:SoC:[1m--------------------------------------------------------------------------------[0m
+INFO:SoC:[1m32[0m-bit [1mwishbone[0m Bus, [1m4.0[0mGiB Address Space.
+IO Regions: (1)
+[4mio0[0m                 : Origin: [1m0x00000000[0m, Size: [1m0x100000000[0m, Mode: [1mRW[0m, Cached: [1mFalse[0m Linker: [1mFalse[0m
+Bus Regions: (1)
+[4mcsr[0m                 : Origin: [1m0x00000000[0m, Size: [1m0x00010000[0m, Mode: [1mRW[0m, Cached: [1mFalse[0m Linker: [1mFalse[0m
+Bus Masters: (1)
+- [4mmaster0[0m
+Bus Slaves: (1)
+- [4mcsr[0m
+INFO:SoC:[1m32[0m-bit CSR Bus, [1m32[0m-bit Aligned, [1m16.0[0mKiB Address Space, [1m2048[0mB Paging, [1mbig[0m Ordering (Up to [1m32[0m Locations).
+CSR Locations: (4)
+- [4mMMIO_inst[0m      : [1m0[0m
+- [4mctrl[0m           : [1m1[0m
+- [4methphy[0m         : [1m2[0m
+- [4midentifier_mem[0m : [1m3[0m
+INFO:SoC:IRQ Handler (up to [1m32[0m Locations).
+INFO:SoC:[1m--------------------------------------------------------------------------------[0m
+INFO:ECP5PLL:Config:
+clki_div   : 1
+clkfb      : 2
+clko0_freq : 50.00MHz
+clko0_div  : 8
+clko0_phase: 0.00°
+clko1_freq : 50.00MHz
+clko1_div  : 8
+clko1_phase: 180.00°
+clko2_div  : 1
+vco        : 400.00MHz
+clkfb_div  : 16
+Info: constraining clock net 'eth_rx_clk' to 125.00 MHz
+Info: constraining clock net 'eth_tx_clk' to 125.00 MHz
+Info: constraining clock net 'clk25' to 25.00 MHz
+Info: constraining clock net 'eth_clocks0_rx' to 125.00 MHz
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:      9328/24288    38%
+Info:         logic LUTs:   5672/24288    23%
+Info:         carry LUTs:   2762/24288    11%
+Info:           RAM LUTs:    596/ 3036    19%
+Info:          RAMW LUTs:    298/ 6072     4%
+
+Info:      Total DFFs:      5506/24288    22%
+
+Info: Packing IOs..
+Info: pin 'stepgen5_step$tr_io' constrained to Bel 'X0/Y14/PIOD'.
+Info: pin 'stepgen5_dir$tr_io' constrained to Bel 'X0/Y17/PIOB'.
+Info: pin 'stepgen4_step$tr_io' constrained to Bel 'X0/Y14/PIOC'.
+Info: pin 'stepgen4_dir$tr_io' constrained to Bel 'X0/Y11/PIOB'.
+Info: pin 'stepgen3_step$tr_io' constrained to Bel 'X0/Y5/PIOD'.
+Info: pin 'stepgen3_dir$tr_io' constrained to Bel 'X0/Y8/PIOD'.
+Info: pin 'stepgen2_step$tr_io' constrained to Bel 'X0/Y5/PIOC'.
+Info: pin 'stepgen2_dir$tr_io' constrained to Bel 'X0/Y8/PIOC'.
+Info: pin 'stepgen1_step$tr_io' constrained to Bel 'X9/Y0/PIOA'.
+Info: pin 'stepgen1_dir$tr_io' constrained to Bel 'X0/Y2/PIOD'.
+Info: pin 'stepgen0_step$tr_io' constrained to Bel 'X11/Y0/PIOA'.
+Info: pin 'stepgen0_dir$tr_io' constrained to Bel 'X9/Y0/PIOB'.
+Info: pin 'sdram_clock$tr_io' constrained to Bel 'X35/Y0/PIOA'.
+Info: pin 'pwm_out2$tr_io' constrained to Bel 'X18/Y50/PIOA'.
+Info: pin 'pwm_out1$tr_io' constrained to Bel 'X15/Y50/PIOB'.
+Info: pin 'pwm_out0$tr_io' constrained to Bel 'X13/Y50/PIOA'.
+Info: pin 'gpio_out9$tr_io' constrained to Bel 'X0/Y11/PIOD'.
+Info: pin 'gpio_out8$tr_io' constrained to Bel 'X0/Y8/PIOB'.
+Info: pin 'gpio_out7$tr_io' constrained to Bel 'X0/Y8/PIOA'.
+Info: pin 'gpio_out6$tr_io' constrained to Bel 'X0/Y5/PIOA'.
+Info: pin 'gpio_out5$tr_io' constrained to Bel 'X0/Y5/PIOB'.
+Info: pin 'gpio_out4$tr_io' constrained to Bel 'X0/Y2/PIOA'.
+Info: pin 'gpio_out3$tr_io' constrained to Bel 'X0/Y17/PIOC'.
+Info: pin 'gpio_out23$tr_io' constrained to Bel 'X0/Y41/PIOB'.
+Info: pin 'gpio_out22$tr_io' constrained to Bel 'X0/Y38/PIOD'.
+Info: pin 'gpio_out21$tr_io' constrained to Bel 'X0/Y38/PIOC'.
+Info: pin 'gpio_out20$tr_io' constrained to Bel 'X0/Y32/PIOB'.
+Info: pin 'gpio_out2$tr_io' constrained to Bel 'X0/Y17/PIOD'.
+Info: pin 'gpio_out19$tr_io' constrained to Bel 'X0/Y29/PIOD'.
+Info: pin 'gpio_out18$tr_io' constrained to Bel 'X0/Y29/PIOC'.
+Info: pin 'gpio_out17$tr_io' constrained to Bel 'X0/Y32/PIOC'.
+Info: pin 'gpio_out16$tr_io' constrained to Bel 'X0/Y29/PIOA'.
+Info: pin 'gpio_out15$tr_io' constrained to Bel 'X0/Y29/PIOB'.
+Info: pin 'gpio_out14$tr_io' constrained to Bel 'X0/Y20/PIOB'.
+Info: pin 'gpio_out13$tr_io' constrained to Bel 'X0/Y20/PIOA'.
+Info: pin 'gpio_out12$tr_io' constrained to Bel 'X0/Y14/PIOB'.
+Info: pin 'gpio_out11$tr_io' constrained to Bel 'X0/Y14/PIOA'.
+Info: pin 'gpio_out10$tr_io' constrained to Bel 'X0/Y11/PIOC'.
+Info: pin 'gpio_out1$tr_io' constrained to Bel 'X0/Y17/PIOA'.
+Info: pin 'gpio_out0$tr_io' constrained to Bel 'X0/Y11/PIOA'.
+Info: pin 'gpio_in9$tr_io' constrained to Bel 'X72/Y29/PIOC'.
+Info: pin 'gpio_in8$tr_io' constrained to Bel 'X72/Y29/PIOD'.
+Info: pin 'gpio_in7$tr_io' constrained to Bel 'X72/Y11/PIOD'.
+Info: pin 'gpio_in6$tr_io' constrained to Bel 'X72/Y8/PIOB'.
+Info: pin 'gpio_in5$tr_io' constrained to Bel 'X72/Y11/PIOC'.
+Info: pin 'gpio_in4$tr_io' constrained to Bel 'X72/Y14/PIOB'.
+Info: pin 'gpio_in3$tr_io' constrained to Bel 'X72/Y14/PIOA'.
+Info: pin 'gpio_in23$tr_io' constrained to Bel 'X72/Y5/PIOC'.
+Info: pin 'gpio_in22$tr_io' constrained to Bel 'X72/Y5/PIOD'.
+Info: pin 'gpio_in21$tr_io' constrained to Bel 'X72/Y8/PIOC'.
+Info: pin 'gpio_in20$tr_io' constrained to Bel 'X72/Y8/PIOD'.
+Info: pin 'gpio_in2$tr_io' constrained to Bel 'X72/Y20/PIOA'.
+Info: pin 'gpio_in19$tr_io' constrained to Bel 'X72/Y11/PIOB'.
+Info: pin 'gpio_in18$tr_io' constrained to Bel 'X72/Y14/PIOC'.
+Info: pin 'gpio_in17$tr_io' constrained to Bel 'X72/Y11/PIOA'.
+Info: pin 'gpio_in16$tr_io' constrained to Bel 'X72/Y17/PIOA'.
+Info: pin 'gpio_in15$tr_io' constrained to Bel 'X72/Y17/PIOB'.
+Info: pin 'gpio_in14$tr_io' constrained to Bel 'X72/Y17/PIOD'.
+Info: pin 'gpio_in13$tr_io' constrained to Bel 'X72/Y29/PIOA'.
+Info: pin 'gpio_in12$tr_io' constrained to Bel 'X72/Y17/PIOC'.
+Info: pin 'gpio_in11$tr_io' constrained to Bel 'X72/Y32/PIOC'.
+Info: pin 'gpio_in10$tr_io' constrained to Bel 'X72/Y32/PIOD'.
+Info: pin 'gpio_in1$tr_io' constrained to Bel 'X72/Y14/PIOD'.
+Info: pin 'gpio_in0$tr_io' constrained to Bel 'X72/Y20/PIOB'.
+Info: pin 'ext_reset_in$tr_io' constrained to Bel 'X6/Y50/PIOA'.
+Info: pin 'eth_clocks0_tx$tr_io' constrained to Bel 'X0/Y26/PIOA'.
+Info: pin 'eth_clocks0_rx$tr_io' constrained to Bel 'X0/Y23/PIOA'.
+Info: pin 'eth0_tx_data[3]$tr_io' constrained to Bel 'X0/Y35/PIOB'.
+Info: pin 'eth0_tx_data[2]$tr_io' constrained to Bel 'X0/Y35/PIOA'.
+Info: pin 'eth0_tx_data[1]$tr_io' constrained to Bel 'X0/Y26/PIOC'.
+Info: pin 'eth0_tx_data[0]$tr_io' constrained to Bel 'X0/Y26/PIOD'.
+Info: pin 'eth0_tx_ctl$tr_io' constrained to Bel 'X0/Y26/PIOB'.
+Info: pin 'eth0_rx_data[3]$tr_io' constrained to Bel 'X0/Y20/PIOD'.
+Info: pin 'eth0_rx_data[2]$tr_io' constrained to Bel 'X0/Y23/PIOC'.
+Info: pin 'eth0_rx_data[1]$tr_io' constrained to Bel 'X0/Y20/PIOC'.
+Info: pin 'eth0_rx_data[0]$tr_io' constrained to Bel 'X0/Y23/PIOD'.
+Info: pin 'eth0_rx_ctl$tr_io' constrained to Bel 'X0/Y23/PIOB'.
+Info: pin 'eth0_rst_n$tr_io' constrained to Bel 'X4/Y50/PIOB'.
+Info: eth0_mdio feeds TRELLIS_IO TRELLIS_IO, removing $nextpnr_ibuf eth0_mdio.
+Info: pin 'TRELLIS_IO' constrained to Bel 'X0/Y44/PIOB'.
+Info: pin 'eth0_mdc$tr_io' constrained to Bel 'X0/Y44/PIOA'.
+Info: pin 'encoder5_Z$tr_io' constrained to Bel 'X72/Y47/PIOD'.
+Info: pin 'encoder5_B$tr_io' constrained to Bel 'X72/Y38/PIOC'.
+Info: pin 'encoder5_A$tr_io' constrained to Bel 'X72/Y32/PIOB'.
+Info: pin 'encoder4_Z$tr_io' constrained to Bel 'X72/Y38/PIOD'.
+Info: pin 'encoder4_B$tr_io' constrained to Bel 'X72/Y2/PIOC'.
+Info: pin 'encoder4_A$tr_io' constrained to Bel 'X72/Y2/PIOB'.
+Info: pin 'encoder3_Z$tr_io' constrained to Bel 'X72/Y2/PIOA'.
+Info: pin 'encoder3_B$tr_io' constrained to Bel 'X72/Y5/PIOA'.
+Info: pin 'encoder3_A$tr_io' constrained to Bel 'X72/Y5/PIOB'.
+Info: pin 'encoder2_Z$tr_io' constrained to Bel 'X72/Y8/PIOA'.
+Info: pin 'encoder2_B$tr_io' constrained to Bel 'X72/Y41/PIOD'.
+Info: pin 'encoder2_A$tr_io' constrained to Bel 'X72/Y41/PIOB'.
+Info: pin 'encoder1_Z$tr_io' constrained to Bel 'X72/Y41/PIOC'.
+Info: pin 'encoder1_B$tr_io' constrained to Bel 'X72/Y44/PIOA'.
+Info: pin 'encoder1_A$tr_io' constrained to Bel 'X72/Y44/PIOB'.
+Info: pin 'encoder0_Z$tr_io' constrained to Bel 'X72/Y47/PIOA'.
+Info: pin 'encoder0_B$tr_io' constrained to Bel 'X72/Y47/PIOB'.
+Info: pin 'encoder0_A$tr_io' constrained to Bel 'X72/Y47/PIOC'.
+Info: pin 'clk25$tr_io' constrained to Bel 'X0/Y47/PIOC'.
+Info: IOLOGIC component DELAYG_9 connected to PIO Bel X0/Y23/PIOC
+Info: IOLOGIC component DELAYG_8 connected to PIO Bel X0/Y20/PIOC
+Info: IOLOGIC component DELAYG_7 connected to PIO Bel X0/Y23/PIOD
+Info: IOLOGIC component DELAYG_6 connected to PIO Bel X0/Y23/PIOB
+Info: IOLOGIC component DELAYG_5 connected to PIO Bel X0/Y35/PIOB
+Info: IOLOGIC component DELAYG_4 connected to PIO Bel X0/Y35/PIOA
+Info: IOLOGIC component DELAYG_3 connected to PIO Bel X0/Y26/PIOC
+Info: IOLOGIC component DELAYG_2 connected to PIO Bel X0/Y26/PIOD
+Info: IOLOGIC component DELAYG_10 connected to PIO Bel X0/Y20/PIOD
+Info: IOLOGIC component DELAYG_1 connected to PIO Bel X0/Y26/PIOB
+Info: IOLOGIC component DELAYG connected to PIO Bel X0/Y26/PIOA
+Info: IOLOGIC component ODDRX1F connected to PIO Bel X35/Y0/PIOA
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     2692 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info:     Input frequency of PLL 'EHXPLLL' is constrained to 25.0 MHz
+Info:     Derived frequency constraint of 50.0 MHz for net crg_clkout0
+Info:     Derived frequency constraint of 50.0 MHz for net crg_clkout1
+Info:     Derived frequency constraint of 400.0 MHz for net basesoc_ecp5pll
+Info: Promoting globals...
+Info:     promoting clock net crg_clkout0 to global network
+Info:     promoting clock net eth_clocks0_rx$TRELLIS_IO_IN to global network
+Info:     promoting clock net crg_clkout1 to global network
+Info: Checksum: 0x832aa548
+
+Info: Annotating ports with timing budgets for target frequency 12.00 MHz
+Info: Checksum: 0xb1d87d3b
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:    99/  197    50%
+Info: 	                DCCA:     3/   56     5%
+Info: 	              DP16KD:     4/   56     7%
+Info: 	          MULT18X18D:     0/   28     0%
+Info: 	              ALU54B:     0/   14     0%
+Info: 	             EHXPLLL:     1/    2    50%
+Info: 	             EXTREFB:     0/    1     0%
+Info: 	                DCUA:     0/    1     0%
+Info: 	           PCSCLKDIV:     0/    2     0%
+Info: 	             IOLOGIC:    11/  128     8%
+Info: 	            SIOLOGIC:     1/   69     1%
+Info: 	                 GSR:     0/    1     0%
+Info: 	               JTAGG:     0/    1     0%
+Info: 	                OSCG:     0/    1     0%
+Info: 	               SEDGA:     0/    1     0%
+Info: 	                 DTR:     0/    1     0%
+Info: 	             USRMCLK:     0/    1     0%
+Info: 	             CLKDIVF:     0/    4     0%
+Info: 	           ECLKSYNCB:     0/   10     0%
+Info: 	             DLLDELD:     0/    8     0%
+Info: 	              DDRDLL:     0/    4     0%
+Info: 	             DQSBUFM:     0/    8     0%
+Info: 	     TRELLIS_ECLKBUF:     0/    8     0%
+Info: 	        ECLKBRIDGECS:     0/    2     0%
+Info: 	                DCSC:     0/    2     0%
+Info: 	          TRELLIS_FF:  5506/24288    22%
+Info: 	        TRELLIS_COMB:  9942/24288    40%
+Info: 	        TRELLIS_RAMW:   149/ 3036     4%
+
+Info: Placed 112 cells based on constraints.
+Info: Creating initial analytic placement for 7639 cells, random placement wirelen = 512285.
+Info:     at initial placer iter 0, wirelen = 9135
+Info:     at initial placer iter 1, wirelen = 7808
+Info:     at initial placer iter 2, wirelen = 7374
+Info:     at initial placer iter 3, wirelen = 7358
+Info: Running main analytical placer.
+Info:     at iteration #1, type ALL: wirelen solved = 7446, spread = 144426, legal = 151495; time = 0.60s
+Info:     at iteration #2, type ALL: wirelen solved = 15611, spread = 83137, legal = 92165; time = 0.49s
+Info:     at iteration #3, type ALL: wirelen solved = 20913, spread = 64757, legal = 74723; time = 0.47s
+Info:     at iteration #4, type ALL: wirelen solved = 25635, spread = 60326, legal = 68849; time = 0.44s
+Info:     at iteration #5, type ALL: wirelen solved = 28909, spread = 56740, legal = 65105; time = 0.43s
+Info:     at iteration #6, type ALL: wirelen solved = 31592, spread = 54639, legal = 63874; time = 0.43s
+Info:     at iteration #7, type ALL: wirelen solved = 33156, spread = 53490, legal = 61619; time = 0.41s
+Info:     at iteration #8, type ALL: wirelen solved = 34329, spread = 51945, legal = 60470; time = 0.39s
+Info:     at iteration #9, type ALL: wirelen solved = 35783, spread = 50425, legal = 58853; time = 0.40s
+Info:     at iteration #10, type ALL: wirelen solved = 36301, spread = 49713, legal = 56814; time = 0.40s
+Info:     at iteration #11, type ALL: wirelen solved = 37019, spread = 49388, legal = 56866; time = 0.39s
+Info:     at iteration #12, type ALL: wirelen solved = 37496, spread = 49518, legal = 56850; time = 0.39s
+Info:     at iteration #13, type ALL: wirelen solved = 37774, spread = 49157, legal = 57491; time = 0.39s
+Info:     at iteration #14, type ALL: wirelen solved = 38304, spread = 48603, legal = 56435; time = 0.38s
+Info:     at iteration #15, type ALL: wirelen solved = 38161, spread = 48811, legal = 56051; time = 0.38s
+Info:     at iteration #16, type ALL: wirelen solved = 38543, spread = 48462, legal = 56260; time = 0.38s
+Info:     at iteration #17, type ALL: wirelen solved = 38397, spread = 49322, legal = 56531; time = 0.38s
+Info:     at iteration #18, type ALL: wirelen solved = 39121, spread = 48512, legal = 56542; time = 0.37s
+Info:     at iteration #19, type ALL: wirelen solved = 39200, spread = 47497, legal = 55741; time = 0.41s
+Info:     at iteration #20, type ALL: wirelen solved = 39164, spread = 47789, legal = 54600; time = 0.37s
+Info:     at iteration #21, type ALL: wirelen solved = 39849, spread = 47334, legal = 54584; time = 0.37s
+Info:     at iteration #22, type ALL: wirelen solved = 39602, spread = 47265, legal = 55401; time = 0.38s
+Info:     at iteration #23, type ALL: wirelen solved = 39796, spread = 48071, legal = 55203; time = 0.38s
+Info:     at iteration #24, type ALL: wirelen solved = 40440, spread = 48076, legal = 55396; time = 0.38s
+Info:     at iteration #25, type ALL: wirelen solved = 40761, spread = 48229, legal = 56228; time = 0.37s
+Info:     at iteration #26, type ALL: wirelen solved = 41166, spread = 48339, legal = 55682; time = 0.37s
+Info: HeAP Placer Time: 14.93s
+Info:   of which solving equations: 7.01s
+Info:   of which spreading cells: 1.61s
+Info:   of which strict legalisation: 2.40s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 2713, wirelen = 54584
+Info:   at iteration #5: temp = 0.000000, timing cost = 1973, wirelen = 49598
+Info:   at iteration #10: temp = 0.000000, timing cost = 1624, wirelen = 48119
+Info:   at iteration #15: temp = 0.000000, timing cost = 1647, wirelen = 47461
+Info:   at iteration #20: temp = 0.000000, timing cost = 1664, wirelen = 47280
+Info:   at iteration #25: temp = 0.000000, timing cost = 1739, wirelen = 47203
+Info:   at iteration #25: temp = 0.000000, timing cost = 1736, wirelen = 47222 
+Info: SA placement time 31.01s
+
+Info: Max frequency for clock '$glbnet$eth_clocks0_rx$TRELLIS_IO_IN': 45.51 MHz (FAIL at 125.00 MHz)
+Info: Max frequency for clock                  '$glbnet$crg_clkout0': 39.22 MHz (FAIL at 50.00 MHz)
+
+Info: Max delay <async>                                      -> posedge $glbnet$crg_clkout0                 : 12.54 ns
+Info: Max delay posedge $glbnet$crg_clkout0                  -> <async>                                     : 9.64 ns
+Info: Max delay posedge $glbnet$crg_clkout0                  -> posedge $glbnet$eth_clocks0_rx$TRELLIS_IO_IN: 3.95 ns
+Info: Max delay posedge $glbnet$eth_clocks0_rx$TRELLIS_IO_IN -> posedge $glbnet$crg_clkout0                 : 1.61 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 58 endpoint(s)
+Info:          + represents [1,58) endpoint(s)
+Info: [-13972,  -9174) |*************+
+Info: [ -9174,  -4376) |**************+
+Info: [ -4376,    422) |************************+
+Info: [   422,   5220) |**********************************************+
+Info: [  5220,  10018) |************************************************************ 
+Info: [ 10018,  14816) |********************************************+
+Info: [ 14816,  19614) |***********************************************************+
+Info: [ 19614,  24412) | 
+Info: [ 24412,  29210) | 
+Info: [ 29210,  34008) | 
+Info: [ 34008,  38806) | 
+Info: [ 38806,  43604) | 
+Info: [ 43604,  48402) | 
+Info: [ 48402,  53200) | 
+Info: [ 53200,  57998) | 
+Info: [ 57998,  62796) | 
+Info: [ 62796,  67594) | 
+Info: [ 67594,  72392) | 
+Info: [ 72392,  77190) |+
+Info: [ 77190,  81988) |+
+Info: Checksum: 0x46d4d21b
+Info: Routing globals...
+Info:     routing clock net $glbnet$crg_clkout1 using global 0
+Info:     routing clock net $glbnet$eth_clocks0_rx$TRELLIS_IO_IN using global 1
+Info:     routing clock net $glbnet$crg_clkout0 using global 2
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 40250 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |      118        881 |  118   881 |     39398|       1.01       1.01|
+Info:       2000 |      320       1679 |  202   798 |     38744|       0.19       1.20|
+Info:       3000 |      559       2440 |  239   761 |     38215|       0.17       1.38|
+Info:       4000 |      826       3173 |  267   733 |     37803|       0.19       1.56|
+Info:       5000 |     1031       3968 |  205   795 |     37196|       0.16       1.73|
+Info:       6000 |     1283       4716 |  252   748 |     36890|       0.34       2.06|
+Info:       7000 |     1506       5493 |  223   777 |     36391|       0.25       2.31|
+Info:       8000 |     1733       6266 |  227   773 |     35958|       0.17       2.48|
+Info:       9000 |     1984       7015 |  251   749 |     35482|       0.27       2.75|
+Info:      10000 |     2171       7828 |  187   813 |     34787|       0.20       2.94|
+Info:      11000 |     2388       8611 |  217   783 |     34149|       0.19       3.13|
+Info:      12000 |     2635       9364 |  247   753 |     33601|       0.19       3.32|
+Info:      13000 |     2933      10066 |  298   702 |     33087|       0.23       3.55|
+Info:      14000 |     3198      10801 |  265   735 |     32500|       0.24       3.79|
+Info:      15000 |     3480      11519 |  282   718 |     32114|       0.23       4.02|
+Info:      16000 |     3753      12246 |  273   727 |     31563|       0.20       4.22|
+Info:      17000 |     3991      13008 |  238   762 |     30909|       0.20       4.43|
+Info:      18000 |     4272      13727 |  281   719 |     30439|       0.27       4.69|
+Info:      19000 |     4507      14492 |  235   765 |     29762|       0.20       4.89|
+Info:      20000 |     4706      15275 |  199   783 |     29068|       0.20       5.10|
+Info:      21000 |     5010      15961 |  304   686 |     28638|       0.26       5.36|
+Info:      22000 |     5278      16666 |  268   705 |     28174|       0.22       5.58|
+Info:      23000 |     5507      17394 |  229   728 |     27529|       0.17       5.74|
+Info:      24000 |     5796      18062 |  289   668 |     26897|       0.20       5.94|
+Info:      25000 |     6036      18781 |  240   719 |     26169|       0.18       6.12|
+Info:      26000 |     6302      19492 |  266   711 |     25731|       0.24       6.36|
+Info:      27000 |     6539      20216 |  237   724 |     24994|       0.20       6.55|
+Info:      28000 |     6763      20969 |  224   753 |     24289|       0.20       6.76|
+Info:      29000 |     6987      21721 |  224   752 |     23601|       0.21       6.96|
+Info:      30000 |     7151      22496 |  164   775 |     22826|       0.20       7.16|
+Info:      31000 |     7337      23291 |  186   795 |     22113|       0.19       7.35|
+Info:      32000 |     7518      24056 |  181   765 |     21341|       0.22       7.57|
+Info:      33000 |     7731      24817 |  213   761 |     20684|       0.21       7.78|
+Info:      34000 |     7922      25587 |  191   770 |     19918|       0.20       7.98|
+Info:      35000 |     8110      26348 |  188   761 |     19168|       0.22       8.20|
+Info:      36000 |     8286      27144 |  176   796 |     18393|       0.23       8.43|
+Info:      37000 |     8542      27858 |  256   714 |     17770|       0.27       8.70|
+Info:      38000 |     8715      28609 |  173   751 |     16989|       0.22       8.92|
+Info:      39000 |     9084      29226 |  369   617 |     16686|       0.32       9.24|
+Info:      40000 |     9278      29975 |  194   749 |     15930|       0.24       9.47|
+Info:      41000 |     9556      30642 |  278   667 |     15427|       0.28       9.76|
+Info:      42000 |     9782      31342 |  226   700 |     14743|       0.24       9.99|
+Info:      43000 |    10017      32042 |  235   700 |     14047|       0.31      10.30|
+Info:      44000 |    10178      32811 |  161   769 |     13234|       0.20      10.50|
+Info:      45000 |    10439      33425 |  261   614 |     12663|       0.23      10.73|
+Info:      46000 |    10612      34100 |  173   675 |     11896|       0.21      10.94|
+Info:      47000 |    10779      34753 |  167   653 |     11089|       0.19      11.13|
+Info:      48000 |    10941      35483 |  162   730 |     10377|       0.29      11.42|
+Info:      49000 |    11178      36190 |  237   707 |      9700|       0.30      11.72|
+Info:      50000 |    11348      36971 |  170   781 |      8914|       0.21      11.93|
+Info:      51000 |    11548      37684 |  200   713 |      8195|       0.25      12.18|
+Info:      52000 |    11769      38436 |  221   752 |      7549|       0.27      12.45|
+Info:      53000 |    11994      39132 |  225   696 |      6866|       0.31      12.76|
+Info:      54000 |    12422      39704 |  428   572 |      6595|       0.41      13.17|
+Info:      55000 |    12652      40468 |  230   764 |      5892|       0.25      13.42|
+Info:      56000 |    13004      41113 |  352   645 |      5531|       0.37      13.78|
+Info:      57000 |    13489      41628 |  485   515 |      5409|       0.51      14.29|
+Info:      58000 |    13767      42350 |  278   722 |      4769|       0.29      14.58|
+Info:      59000 |    14013      43048 |  246   698 |      4136|       0.30      14.88|
+Info:      60000 |    14103      43819 |   90   771 |      3272|       0.25      15.13|
+Info:      61000 |    14183      44581 |   80   762 |      2404|       0.24      15.37|
+Info:      62000 |    14245      45377 |   62   796 |      1513|       0.24      15.61|
+Info:      63000 |    14293      46186 |   48   809 |       573|       0.24      15.85|
+Info:      63653 |    14345      46689 |   52   503 |         0|       0.21      16.06|
+Info: Routing complete.
+Info: Router1 time 16.06s
+Info: Checksum: 0xa073c6c4
+
+Info: Critical path report for clock '$glbnet$eth_clocks0_rx$TRELLIS_IO_IN' (posedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source basesoc_ethcore_icmp_echo_param_fifo_readable_TRELLIS_FF_Q.Q
+Info:  1.4  1.9    Net basesoc_ethcore_icmp_echo_param_fifo_readable budget 0.062000 ns (7,3) -> (16,8)
+Info:                Sink basesoc_liteethicmptx_state_PFUMX_C0_ALUT_LUT4_Z.B
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  2.1  Source basesoc_liteethicmptx_state_PFUMX_C0_ALUT_LUT4_Z.F
+Info:  0.0  2.1    Net basesoc_liteethicmptx_state_PFUMX_C0_ALUT budget 0.062000 ns (16,8) -> (16,8)
+Info:                Sink basesoc_liteethicmptx_state_PFUMX_C0_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.22-133.24
+Info:  0.2  2.3  Source basesoc_liteethicmptx_state_PFUMX_C0_BLUT_LUT4_Z.OFX
+Info:  1.4  3.7    Net basesoc_liteethicmptx_state_PFUMX_C0_Z[3] budget 0.062000 ns (16,8) -> (16,18)
+Info:                Sink basesoc_liteethmac_status1_ongoing0_LUT4_Z_B_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.D
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  3.9  Source basesoc_liteethmac_status1_ongoing0_LUT4_Z_B_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  3.9    Net basesoc_liteethmac_status1_ongoing0_LUT4_Z_B_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT budget 0.062000 ns (16,18) -> (16,18)
+Info:                Sink basesoc_liteethmac_status1_ongoing0_LUT4_Z_B_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.30-157.32
+Info:  0.2  4.1  Source basesoc_liteethmac_status1_ongoing0_LUT4_Z_B_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  4.1    Net basesoc_liteethmac_status1_ongoing0_LUT4_Z_B_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D1 budget 0.000000 ns (16,18) -> (16,18)
+Info:                Sink basesoc_liteethmac_status1_ongoing0_LUT4_Z_B_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.54-157.56
+Info:  0.2  4.3  Source basesoc_liteethmac_status1_ongoing0_LUT4_Z_B_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  4.3    Net basesoc_liteethmac_status1_ongoing0_LUT4_Z_B_LUT4_C_Z_L6MUX21_Z_D0 budget 0.000000 ns (16,18) -> (16,18)
+Info:                Sink basesoc_liteethmac_status1_ongoing0_LUT4_Z_B_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.66-157.68
+Info:  0.2  4.5  Source basesoc_liteethmac_status1_ongoing0_LUT4_Z_B_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  1.7  6.2    Net basesoc_liteetharptable_state_LUT4_A_Z[4] budget 0.247000 ns (16,18) -> (11,29)
+Info:                Sink basesoc_liteethip_liteethiptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.B
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.4  6.6  Source basesoc_liteethip_liteethiptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  6.6    Net basesoc_liteethip_liteethiptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0 budget 0.000000 ns (11,29) -> (11,29)
+Info:                Sink basesoc_liteethip_liteethiptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.58-157.60
+Info:  0.2  6.8  Source basesoc_liteethip_liteethiptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  6.8    Net basesoc_liteethip_liteethiptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1 budget 0.000000 ns (11,29) -> (11,29)
+Info:                Sink basesoc_liteethip_liteethiptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.70-157.72
+Info:  0.2  7.1  Source basesoc_liteethip_liteethiptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  1.7  8.8    Net basesoc_ethcore_ip_tx_packetizer_sr_shift_LUT4_Z_A[2] budget 0.165000 ns (11,29) -> (20,18)
+Info:                Sink basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_D_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.B
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  9.0  Source basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_D_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  9.0    Net basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_D_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT budget 0.165000 ns (20,18) -> (20,18)
+Info:                Sink basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_D_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.46-157.48
+Info:  0.2  9.2  Source basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_D_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  9.2    Net basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_D_Z_L6MUX21_Z_D1_L6MUX21_Z_D1 budget 0.000000 ns (20,18) -> (20,18)
+Info:                Sink basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_D_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.62-157.64
+Info:  0.2  9.4  Source basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_D_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  9.4    Net basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_D_Z_L6MUX21_Z_D1 budget 0.000000 ns (20,18) -> (20,18)
+Info:                Sink basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_D_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.70-157.72
+Info:  0.2  9.6  Source basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_D_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  1.0 10.6    Net basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_D_Z[0] budget 0.944000 ns (20,18) -> (20,15)
+Info:                Sink basesoc_etherbone_tx_cdc_cdc_graycounter1_q_next_binary_PFUMX_Z_ALUT_LUT4_Z.A
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2 10.8  Source basesoc_etherbone_tx_cdc_cdc_graycounter1_q_next_binary_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0 10.8    Net basesoc_etherbone_tx_cdc_cdc_graycounter1_q_next_binary_PFUMX_Z_ALUT budget 0.472000 ns (20,15) -> (20,15)
+Info:                Sink basesoc_etherbone_tx_cdc_cdc_graycounter1_q_next_binary_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:133.22-133.24
+Info:  0.2 11.0  Source basesoc_etherbone_tx_cdc_cdc_graycounter1_q_next_binary_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  1.8 12.8    Net basesoc_etherbone_tx_cdc_cdc_graycounter1_q_next_binary[1] budget 0.472000 ns (20,15) -> (20,27)
+Info:                Sink storage_5.0.16$DPRAM_COMB3.B
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/Fabio-Lcnc/build/colorlight_5a_75e/gateware/Lcnc.v:1774.12-1774.51
+Info:  0.2 13.1  Source storage_5.0.16$DPRAM_COMB3.F
+Info:  0.1 13.2    Net storage_5.0.0_DO[67] budget 0.472000 ns (20,27) -> (20,27)
+Info:                Sink storage_5_dat1_TRELLIS_FF_Q_38.DI
+Info:  0.0 13.2  Setup storage_5_dat1_TRELLIS_FF_Q_38.DI
+Info: 4.2 ns logic, 9.0 ns routing
+
+Info: Critical path report for clock '$glbnet$crg_clkout0' (posedge -> posedge):
+Info: curr total
+Info:  5.6  5.6  Source storage_8.0.0.DOA9
+Info:  1.2  6.9    Net storage_8.0.0_DOA9[1] budget 0.572000 ns (28,25) -> (26,22)
+Info:                Sink basesoc_etherbone_liteethetherbonewishbonemaster_sink_payload_addr_L6MUX21_Z_3_D1_PFUMX_Z_ALUT_LUT4_Z.C
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  7.1  Source basesoc_etherbone_liteethetherbonewishbonemaster_sink_payload_addr_L6MUX21_Z_3_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  7.1    Net basesoc_etherbone_liteethetherbonewishbonemaster_sink_payload_addr_L6MUX21_Z_3_D1_PFUMX_Z_ALUT budget 0.572000 ns (26,22) -> (26,22)
+Info:                Sink basesoc_etherbone_liteethetherbonewishbonemaster_sink_payload_addr_L6MUX21_Z_3_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:141.30-141.32
+Info:  0.2  7.3  Source basesoc_etherbone_liteethetherbonewishbonemaster_sink_payload_addr_L6MUX21_Z_3_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  7.3    Net basesoc_etherbone_liteethetherbonewishbonemaster_sink_payload_addr_L6MUX21_Z_3_D1 budget 0.000000 ns (26,22) -> (26,22)
+Info:                Sink basesoc_etherbone_liteethetherbonewishbonemaster_sink_payload_addr_L6MUX21_Z_3_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:141.38-141.40
+Info:  0.2  7.5  Source basesoc_etherbone_liteethetherbonewishbonemaster_sink_payload_addr_L6MUX21_Z_3_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  2.3  9.8    Net basesoc_etherbone_liteethetherbonewishbonemaster_sink_payload_addr[7] budget 1.144000 ns (26,22) -> (42,15)
+Info:                Sink basesoc_etherbone_record_receiver_param_fifo_readable_LUT4_D_Z_PFUMX_ALUT_Z_PFUMX_C0_ALUT_LUT4_Z.A
+Info:  0.2 10.0  Source basesoc_etherbone_record_receiver_param_fifo_readable_LUT4_D_Z_PFUMX_ALUT_Z_PFUMX_C0_ALUT_LUT4_Z.F
+Info:  0.0 10.0    Net basesoc_etherbone_record_receiver_param_fifo_readable_LUT4_D_Z_PFUMX_ALUT_Z_PFUMX_C0_ALUT budget 1.144000 ns (42,15) -> (42,15)
+Info:                Sink basesoc_etherbone_record_receiver_param_fifo_readable_LUT4_D_Z_PFUMX_ALUT_Z_PFUMX_C0_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:141.30-141.32
+Info:  0.2 10.2  Source basesoc_etherbone_record_receiver_param_fifo_readable_LUT4_D_Z_PFUMX_ALUT_Z_PFUMX_C0_BLUT_LUT4_Z.OFX
+Info:  0.0 10.2    Net basesoc_etherbone_record_receiver_param_fifo_readable_LUT4_D_Z_PFUMX_ALUT_Z_PFUMX_C0_Z budget 0.000000 ns (42,15) -> (42,15)
+Info:                Sink basesoc_etherbone_record_receiver_param_fifo_readable_LUT4_D_Z_PFUMX_ALUT_Z_PFUMX_C0_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:141.38-141.40
+Info:  0.2 10.4  Source basesoc_etherbone_record_receiver_param_fifo_readable_LUT4_D_Z_PFUMX_ALUT_Z_PFUMX_C0_ALUT_LUT4_Z.OFX
+Info:  1.5 12.0    Net basesoc_etherbone_record_receiver_param_fifo_readable_LUT4_D_Z_PFUMX_ALUT_Z_LUT4_C_4_Z_PFUMX_ALUT_Z[4] budget 2.405000 ns (42,15) -> (34,19)
+Info:                Sink csr_bankarray_sel_LUT4_Z_A_LUT4_C_Z_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.3 12.2  Source csr_bankarray_sel_LUT4_Z_A_LUT4_C_Z_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  1.7 13.9    Net csr_bankarray_sel_LUT4_Z_A_LUT4_C_Z[2] budget 1.202000 ns (34,19) -> (32,26)
+Info:                Sink csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.C
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2 14.1  Source csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0 14.1    Net csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT budget 1.202000 ns (32,26) -> (32,26)
+Info:                Sink csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.30-157.32
+Info:  0.2 14.3  Source csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0 14.3    Net csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D1 budget 0.000000 ns (32,26) -> (32,26)
+Info:                Sink csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.54-157.56
+Info:  0.2 14.5  Source csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0 14.5    Net csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_LSR_L6MUX21_Z_D0 budget 0.000000 ns (32,26) -> (32,26)
+Info:                Sink csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_LSR_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.66-157.68
+Info:  0.2 14.8  Source csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_LSR_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  2.1 16.9    Net csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_LSR budget 1.923000 ns (32,26) -> (43,11)
+Info:                Sink csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_20.LSR
+Info:  0.4 17.3  Setup csr_bankarray_interface0_bank_bus_dat_r_TRELLIS_FF_Q_20.LSR
+Info: 8.5 ns logic, 8.8 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$crg_clkout0':
+Info: curr total
+Info:  0.0  0.0  Source ext_reset_in$tr_io.O
+Info:  4.2  4.2    Net ext_reset_in$TRELLIS_IO_IN budget 9.670000 ns (6,50) -> (41,28)
+Info:                Sink ext_reset_in_LUT4_D_1.D
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/Fabio-Lcnc/build/colorlight_5a_75e/gateware/Lcnc.v:121.6-121.20
+Info:  0.2  4.4  Source ext_reset_in_LUT4_D_1.F
+Info:  1.5  5.9    Net ext_reset_in_LUT4_D_1_Z budget 9.407000 ns (41,28) -> (54,24)
+Info:                Sink wdt_count_TRELLIS_FF_Q_1.LSR
+Info:  0.4  6.4  Setup wdt_count_TRELLIS_FF_Q_1.LSR
+Info: 0.7 ns logic, 5.7 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$crg_clkout0' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source stepgen1_step1_TRELLIS_FF_Q.Q
+Info:  1.7  2.2    Net stepgen1_step1 budget 41.285999 ns (55,4) -> (44,5)
+Info:                Sink stepgen1_step_LUT4_Z.C
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  2.5  Source stepgen1_step_LUT4_Z.F
+Info:  3.0  5.5    Net stepgen1_step$TRELLIS_IO_OUT budget 41.285999 ns (44,5) -> (9,0)
+Info:                Sink stepgen1_step$tr_io.I
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/Fabio-Lcnc/build/colorlight_5a_75e/gateware/Lcnc.v:104.14-104.27
+Info: 0.8 ns logic, 4.7 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$crg_clkout0' -> 'posedge $glbnet$eth_clocks0_rx$TRELLIS_IO_IN':
+Info: curr total
+Info:  0.5  0.5  Source ethphy_reset_storage_TRELLIS_FF_Q.Q
+Info:  1.2  1.7    Net csr_bankarray_csrbank2_crg_reset0_w budget 7.051000 ns (30,35) -> (15,35)
+Info:                Sink FD1S3BX_5.LSR
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/Fabio-Lcnc/build/colorlight_5a_75e/gateware/Lcnc.v:147.6-147.26
+Info:  0.4  2.2  Setup FD1S3BX_5.LSR
+Info: 0.9 ns logic, 1.2 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$eth_clocks0_rx$TRELLIS_IO_IN' -> 'posedge $glbnet$crg_clkout0':
+Info: curr total
+Info:  0.5  0.5  Source ethphy_link_status_TRELLIS_FF_Q.Q
+Info:  0.7  1.2    Net csr_bankarray_csrbank2_rx_inband_status_w[0] budget 6.335000 ns (29,28) -> (29,29)
+Info:                Sink eth0_mdc_LUT4_B.C
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/Fabio-Lcnc/build/colorlight_5a_75e/gateware/Lcnc.v:174.12-174.25
+Info:  0.2  1.5  Source eth0_mdc_LUT4_B.F
+Info:  0.4  1.9    Net eth0_mdc_LUT4_B_Z[3] budget 1.771000 ns (29,29) -> (29,29)
+Info:                Sink ethphy_clock_speed_LUT4_D_Z_LUT4_Z.D
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  2.1  Source ethphy_clock_speed_LUT4_D_Z_LUT4_Z.F
+Info:  0.1  2.2    Net ethphy_clock_speed_LUT4_D_Z[0] budget 1.771000 ns (29,29) -> (29,29)
+Info:                Sink csr_bankarray_interface2_bank_bus_dat_r_TRELLIS_FF_Q.DI
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/Fabio-Lcnc/build/colorlight_5a_75e/gateware/Lcnc.v:0.0-0.0
+Info:                  /home/svb/GIT.svb/Fabio-Lcnc/build/colorlight_5a_75e/gateware/Lcnc.v:11408.3-11421.10
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/techmap.v:578.19-578.22
+Info:  0.0  2.2  Setup csr_bankarray_interface2_bank_bus_dat_r_TRELLIS_FF_Q.DI
+Info: 1.0 ns logic, 1.3 ns routing
+
+Warning: Max frequency for clock '$glbnet$eth_clocks0_rx$TRELLIS_IO_IN': 75.80 MHz (FAIL at 125.00 MHz)
+Info: Max frequency for clock                  '$glbnet$crg_clkout0': 57.89 MHz (PASS at 50.00 MHz)
+
+Info: Max delay <async>                                      -> posedge $glbnet$crg_clkout0                 : 6.37 ns
+Info: Max delay posedge $glbnet$crg_clkout0                  -> <async>                                     : 5.48 ns
+Info: Max delay posedge $glbnet$crg_clkout0                  -> posedge $glbnet$eth_clocks0_rx$TRELLIS_IO_IN: 2.17 ns
+Info: Max delay posedge $glbnet$eth_clocks0_rx$TRELLIS_IO_IN -> posedge $glbnet$crg_clkout0                 : 2.25 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 64 endpoint(s)
+Info:          + represents [1,64) endpoint(s)
+Info: [ -5192,   -838) |****************************+
+Info: [  -838,   3516) |****************************+
+Info: [  3516,   7870) |**********************************************************+
+Info: [  7870,  12224) |****************+
+Info: [ 12224,  16578) |************************************************************ 
+Info: [ 16578,  20932) |*********************************************+
+Info: [ 20932,  25286) | 
+Info: [ 25286,  29640) | 
+Info: [ 29640,  33994) | 
+Info: [ 33994,  38348) | 
+Info: [ 38348,  42702) | 
+Info: [ 42702,  47056) | 
+Info: [ 47056,  51410) | 
+Info: [ 51410,  55764) | 
+Info: [ 55764,  60118) | 
+Info: [ 60118,  64472) | 
+Info: [ 64472,  68826) | 
+Info: [ 68826,  73180) | 
+Info: [ 73180,  77534) | 
+Info: [ 77534,  81888) |+
+1 warning, 0 errors
+
+Info: Program finished normally.
+sh: 1: sphinx-build: not found
