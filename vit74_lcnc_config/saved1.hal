@@ -1,0 +1,97 @@
+# components
+loadrt litexcnc
+#loadrt litexcnc_debug  
+loadrt litexcnc_eth config_file="/home/cnc/LiteX-CNC-main/vit-5a-75b/vit-5a-75b.json" 
+loadrt threads name1=scope-thread period1=1000000 name2=test-thread period2=1000000
+
+addf test_PWM_GPIO.read test-thread
+addf test_PWM_GPIO.write test-thread
+
+setp test_PWM_GPIO.watchdog.timeout_ns 15000000
+
+setp test_PWM_GPIO.stepgen.00.maxaccel       10.0
+setp test_PWM_GPIO.stepgen.00.maxvel         100.0
+setp test_PWM_GPIO.stepgen.00.position-scale 200
+setp test_PWM_GPIO.stepgen.00.position-mode  FALSE
+setp test_PWM_GPIO.stepgen.00.steplen        1024
+setp test_PWM_GPIO.stepgen.00.stepspace      1025
+setp test_PWM_GPIO.stepgen.00.dir-hold-time  4096
+setp test_PWM_GPIO.stepgen.00.dir-setup-time 4097
+setp test_PWM_GPIO.stepgen.00.enable         1
+
+
+#loadrt siggen
+#addf siggen.0.update test-thread
+#setp siggen.0.frequency 0.1
+#net stepgen-pos siggen.0.sine => test_PWM_GPIO.stepgen.00.position-cmd
+
+#setp test_PWM_GPIO.encoder.00.position_scale 1
+#setp test_PWM_GPIO.encoder.00.x4_mode FALSE
+#setp test_PWM_GPIO.encoder.01.position_scale 1
+#setp test_PWM_GPIO.encoder.01.x4_mode FALSE
+#setp test_PWM_GPIO.encoder.02.position_scale 1
+#setp test_PWM_GPIO.encoder.02.x4_mode FALSE
+#setp test_PWM_GPIO.encoder.03.position_scale 1
+#setp test_PWM_GPIO.encoder.03.x4_mode FALSE
+#setp test_PWM_GPIO.encoder.04.position_scale 1
+#setp test_PWM_GPIO.encoder.04.x4_mode FALSE
+#setp test_PWM_GPIO.encoder.05.position_scale 1
+#setp test_PWM_GPIO.encoder.05.x4_mode FALSE
+
+loadusr -Wn TestPanel pyvcp -c TestPanel testpanel.xml
+
+net In0 <= test_PWM_GPIO.gpio.00.in => TestPanel.In0
+net In1 <= test_PWM_GPIO.gpio.01.in => TestPanel.In1
+net In2 <= test_PWM_GPIO.gpio.02.in => TestPanel.In2
+net In3 <= test_PWM_GPIO.gpio.03.in => TestPanel.In3
+net In4 <= test_PWM_GPIO.gpio.04.in => TestPanel.In4
+net In5 <= test_PWM_GPIO.gpio.05.in => TestPanel.In5
+net In6 <= test_PWM_GPIO.gpio.06.in => TestPanel.In6
+net In7 <= test_PWM_GPIO.gpio.07.in => TestPanel.In7
+net In8 <= test_PWM_GPIO.gpio.08.in => TestPanel.In8
+net In9 <= test_PWM_GPIO.gpio.09.in => TestPanel.In9
+net In10 <= test_PWM_GPIO.gpio.10.in => TestPanel.In10
+net In11 <= test_PWM_GPIO.gpio.11.in => TestPanel.In11
+
+net Out0 <= TestPanel.Out0 => test_PWM_GPIO.gpio.00.out
+net Out1 <= TestPanel.Out1 => test_PWM_GPIO.gpio.01.out
+net Out2 <= TestPanel.Out2 => test_PWM_GPIO.gpio.02.out
+net Out3 <= TestPanel.Out3 => test_PWM_GPIO.gpio.03.out
+net Out4 <= TestPanel.Out4 => test_PWM_GPIO.gpio.04.out
+net Out5 <= TestPanel.Out5 => test_PWM_GPIO.gpio.05.out
+net Out6 <= TestPanel.Out6 => test_PWM_GPIO.gpio.06.out
+net Out7 <= TestPanel.Out7 => test_PWM_GPIO.gpio.07.out
+net Out8 <= TestPanel.Out8 => test_PWM_GPIO.gpio.08.out
+net Out9 <= TestPanel.Out9 => test_PWM_GPIO.gpio.09.out
+net Out10 <= TestPanel.Out10 => test_PWM_GPIO.gpio.10.out
+net Out11 <= TestPanel.Out11 => test_PWM_GPIO.gpio.11.out
+
+setp test_PWM_GPIO.pwm.00.enable TRUE
+setp test_PWM_GPIO.pwm.01.enable TRUE
+setp test_PWM_GPIO.pwm.02.enable TRUE
+
+net Per0 <= TestPanel.perpwm0-f => test_PWM_GPIO.pwm.00.pwm_freq
+net Per1 <= TestPanel.perpwm1-f => test_PWM_GPIO.pwm.01.pwm_freq
+net Per2 <= TestPanel.perpwm2-f => test_PWM_GPIO.pwm.02.pwm_freq
+
+net Wdt0 <= TestPanel.wpwm0-f => test_PWM_GPIO.pwm.00.value
+net Wdt1 <= TestPanel.wpwm1-f => test_PWM_GPIO.pwm.01.value
+net Wdt2 <= TestPanel.wpwm2-f => test_PWM_GPIO.pwm.02.value
+
+#net Enc0 <= test_PWM_GPIO.encoder.00.position => TestPanel.Enc0
+#net Enc1 <= test_PWM_GPIO.encoder.01.position => TestPanel.Enc1
+#net Enc2 <= test_PWM_GPIO.encoder.02.position => TestPanel.Enc2
+#net Enc3 <= test_PWM_GPIO.encoder.03.position => TestPanel.Enc3
+#net Enc4 <= test_PWM_GPIO.encoder.04.position => TestPanel.Enc4
+#net Enc5 <= test_PWM_GPIO.encoder.05.position => TestPanel.Enc5
+
+
+#net En0 <= TestPanel.Sg0En => test_PWM_GPIO.stepgen.00.enable
+#net Counts0 <= test_PWM_GPIO.stepgen.00.counts => TestPanel.Sg0Count
+net PosFb0 <= test_PWM_GPIO.stepgen.00.position-feedback => TestPanel.Sg0PosFb
+net PosCmd0 <= TestPanel.Sg0PosCmd-f => test_PWM_GPIO.stepgen.00.position-cmd
+net VelFb0 <= test_PWM_GPIO.stepgen.00.speed-feedback => TestPanel.Sg0VelFb
+net VelCmd0 <= TestPanel.Sg0VelCmd-f => test_PWM_GPIO.stepgen.00.velocity-cmd
+
+start
+
