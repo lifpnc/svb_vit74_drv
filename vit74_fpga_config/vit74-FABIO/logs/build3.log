@@ -1,0 +1,265 @@
+WARNING - Create a new implementation in an existing sub-directory 'impl'.
+
+synpwrap -msg -prj "Lcnc_impl_synplify.tcl" -log "Lcnc_impl.srf"
+Copyright (C) 1992-2020 Lattice Semiconductor Corporation. All rights reserved.
+Lattice Diamond Version 3.12.1.454
+    <postMsg mid="2011000" type="Info"    dynamic="0" navigation="0"  />
+/proc/sys/vm/admin_reserve_kbytes:8192
+/proc/sys/vm/block_dump:0
+/proc/sys/vm/compact_unevictable_allowed:1
+/proc/sys/vm/dirty_background_bytes:0
+/proc/sys/vm/dirty_background_ratio:10
+/proc/sys/vm/dirty_bytes:0
+/proc/sys/vm/dirty_expire_centisecs:3000
+/proc/sys/vm/dirty_ratio:20
+/proc/sys/vm/dirty_writeback_centisecs:500
+/proc/sys/vm/dirtytime_expire_seconds:43200
+/proc/sys/vm/extfrag_threshold:500
+/proc/sys/vm/hugetlb_shm_group:0
+/proc/sys/vm/laptop_mode:0
+/proc/sys/vm/legacy_va_layout:0
+/proc/sys/vm/lowmem_reserve_ratio:256	256	32	0	0
+/proc/sys/vm/max_map_count:65530
+/proc/sys/vm/memory_failure_early_kill:0
+/proc/sys/vm/memory_failure_recovery:1
+/proc/sys/vm/min_free_kbytes:11260
+/proc/sys/vm/min_slab_ratio:5
+/proc/sys/vm/min_unmapped_ratio:1
+/proc/sys/vm/mmap_min_addr:65536
+/proc/sys/vm/nr_hugepages:0
+/proc/sys/vm/nr_hugepages_mempolicy:0
+/proc/sys/vm/nr_overcommit_hugepages:0
+/proc/sys/vm/numa_stat:1
+/proc/sys/vm/numa_zonelist_order:Node
+/proc/sys/vm/oom_dump_tasks:1
+/proc/sys/vm/oom_kill_allocating_task:0
+/proc/sys/vm/overcommit_kbytes:0
+/proc/sys/vm/overcommit_memory:0
+/proc/sys/vm/overcommit_ratio:50
+/proc/sys/vm/page-cluster:3
+/proc/sys/vm/panic_on_oom:0
+/proc/sys/vm/percpu_pagelist_fraction:0
+/proc/sys/vm/stat_interval:1
+/proc/sys/vm/swappiness:60
+/proc/sys/vm/user_reserve_kbytes:131072
+/proc/sys/vm/vfs_cache_pressure:100
+/proc/sys/vm/watermark_scale_factor:10
+/proc/sys/vm/zone_reclaim_mode:0
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000000 229376     svb        600        393216     2          dest         
+0x00000000 262145     svb        600        393216     2          dest         
+0x00000000 9043970    svb        600        524288     2          dest         
+0x00000000 11042819   svb        600        524288     2          dest         
+0x00000000 15761412   svb        600        524288     2          dest         
+0x00000000 1441797    svb        600        524288     2          dest         
+0x00000000 4784134    svb        600        524288     2          dest         
+0x00000000 4358151    svb        600        45056      2          dest         
+0x00000000 4292616    svb        600        135168     2          dest         
+0x00000000 1540105    svb        600        868352     2          dest         
+0x00000000 1572874    svb        600        868352     2          dest         
+0x00000000 1736715    svb        600        135168     2          dest         
+0x00000000 1769484    svb        600        135168     2          dest         
+0x000003e9 14876685   svb        700        8192       7                       
+0x00000000 1966094    svb        600        409600     2          dest         
+0x000003ea 14909455   svb        700        170000     22                      
+0x000003eb 14942224   svb        700        8192       6                       
+0x00000000 1933329    svb        600        409600     2          dest         
+0x00000000 2555922    svb        600        393216     2          dest         
+0x00000000 3473427    svb        600        524288     2          dest         
+0x00000000 15368212   svb        600        4194304    2          dest         
+0x00000000 15335445   svb        600        102400     2          dest         
+0x00000000 3309590    svb        600        487424     2          dest         
+0x00000000 3342359    svb        600        487424     2          dest         
+0x00000000 4128792    svb        600        67108864   2          dest         
+0x00000000 3538969    svb        600        33554432   2          dest         
+0x00000000 4554778    svb        600        434176     2          dest         
+0x000003ec 14975003   svb        700        2048       3                       
+0x00000000 4325404    svb        600        135168     2          dest         
+0x00000000 4390941    svb        600        45056      2          dest         
+0x00000000 4587550    svb        600        434176     2          dest         
+0x000003ed 15007775   svb        700        131072     3                       
+0x48484c34 15106080   svb        600        16         6                 locked
+0x48414c32 15138849   svb        600        348160     6                 locked
+0x00000064 15171618   svb        600        2512904    2                 locked
+0x00000000 11468835   svb        600        524288     2          dest         
+0x00000000 15269924   svb        600        393216     2          dest         
+0x00000000 15302693   svb        600        102400     2          dest         
+0x00000000 15466534   svb        600        524288     2          dest         
+0x00000000 15499303   svb        600        33554432   2          dest         
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+0x000003e9 1638400    svb        700        1         
+0x000003ea 1671169    svb        700        1         
+0x000003eb 1703938    svb        700        1         
+0x000003ec 1736707    svb        700        1         
+0x000003ed 1769476    svb        700        1         
+
+MSK
+Debian GNU/Linux 10 (buster)
+###########################################################[
+Running in Lattice mode
+
+                               Synplify Pro (R) 
+
+               Version R-2021.03L-SP1 for RHEL64 - Aug 10, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Starting:    /usr/local/diamond/3.12/synpbase/linux_a_64/mbin/synbatch
+Install:     /usr/local/diamond/3.12/synpbase
+Hostname:    LiteXCNC-hdev
+Date:        Sat Aug 20 23:17:50 2022
+Version:     R-2021.03L-SP1
+
+Arguments:   -product synplify_pro -batch Lcnc_impl_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+Copied /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/impl/Lcnc_impl.srr to /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/impl/backup/Lcnc_impl.srr
+log file: "/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/impl/Lcnc_impl.srr"
+Running: impl in foreground
+
+Running proj_1|impl
+
+Running Flow: compile (Compile) on proj_1|impl
+# Sat Aug 20 23:17:51 2022
+
+Running Flow: compile_flow (Compile Process) on proj_1|impl
+# Sat Aug 20 23:17:51 2022
+
+Running: compiler (Compile Input) on proj_1|impl
+# Sat Aug 20 23:17:51 2022
+compiler exited with errors
+Job failed on: proj_1|impl
+
+Job: "compiler" terminated with error status: 2
+See log file: "/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/impl/synlog/Lcnc_impl_compiler.srr"
+# Sat Aug 20 23:17:51 2022
+
+Return Code: 2
+Run Time:00h:00m:00s
+Complete: Compile Process on proj_1|impl
+Complete: Compile on proj_1|impl
+Complete: Logic Synthesis on proj_1|impl
+Copied /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/impl/Lcnc_impl.srr to /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/impl/Lcnc_impl.srf
+Error: At line 64 while processing "Lcnc_impl_synplify.tcl"
+2
+TCL script complete: "Lcnc_impl_synplify.tcl"
+TCL script had errors: "Lcnc_impl_synplify.tcl"
+exit status=9
+exit status=9
+Save changes for project:
+/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/impl/proj_1.prj
+batch mode default:no
+Child process exit with 9.
+
+==contents of Lcnc_impl.srf
+#Build: Synplify Pro (R) R-2021.03L-SP1, Build 093R, Aug 10 2021
+#install: /usr/local/diamond/3.12/synpbase
+#OS: Linux 
+#Hostname: LiteXCNC-hdev
+
+# Sat Aug 20 23:17:51 2022
+
+#Implementation: impl
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: /usr/local/diamond/3.12/synpbase
+OS: Debian GNU/Linux 10 (buster)
+Hostname: LiteXCNC-hdev
+max virtual memory: unlimited (bytes)
+max user processes: 30954
+max stack size: 8388608 (bytes)
+
+
+Implementation : impl
+Synopsys HDL Compiler, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:23:04, @3930113
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: /usr/local/diamond/3.12/synpbase
+OS: Debian GNU/Linux 10 (buster)
+Hostname: LiteXCNC-hdev
+max virtual memory: unlimited (bytes)
+max user processes: 30954
+max stack size: 8388608 (bytes)
+
+
+Implementation : impl
+Synopsys Verilog Compiler, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:23:04, @3930113
+
+@N|Running in 64-bit mode
+@I::"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5u.v" (library work)
+@I::"/usr/local/diamond/3.12/synpbase/lib/lucent/pmi_def.v" (library work)
+@I::"/usr/local/diamond/3.12/synpbase/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/usr/local/diamond/3.12/synpbase/lib/vlog/umr_capim.v" (library snps_haps)
+@I::"/usr/local/diamond/3.12/synpbase/lib/vlog/scemi_objects.v" (library snps_haps)
+@I::"/usr/local/diamond/3.12/synpbase/lib/vlog/scemi_pipes.svh" (library snps_haps)
+@I::"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v" (library work)
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10128:1:10128:23|Assignment target MMIO_inst_csrstatus0_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10139:1:10139:23|Assignment target MMIO_inst_csrstatus1_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10150:1:10150:23|Assignment target MMIO_inst_csrstatus2_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10161:1:10161:23|Assignment target MMIO_inst_csrstatus3_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10172:1:10172:23|Assignment target MMIO_inst_csrstatus4_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10183:1:10183:23|Assignment target MMIO_inst_csrstatus5_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10194:1:10194:23|Assignment target MMIO_inst_csrstatus6_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10198:1:10198:23|Assignment target MMIO_inst_csrstatus7_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10202:1:10202:23|Assignment target MMIO_inst_csrstatus8_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10206:1:10206:23|Assignment target MMIO_inst_csrstatus9_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10210:1:10210:24|Assignment target MMIO_inst_csrstatus10_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10214:1:10214:24|Assignment target MMIO_inst_csrstatus11_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":10307:1:10307:21|Assignment target MMIO_inst_gpios_in_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12126:2:12126:24|Assignment target MMIO_inst_csrstatus0_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12129:2:12129:24|Assignment target MMIO_inst_csrstatus1_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12132:2:12132:24|Assignment target MMIO_inst_csrstatus2_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12135:2:12135:24|Assignment target MMIO_inst_csrstatus3_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12138:2:12138:24|Assignment target MMIO_inst_csrstatus4_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12141:2:12141:24|Assignment target MMIO_inst_csrstatus5_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12146:2:12146:22|Assignment target MMIO_inst_gpios_in_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12149:2:12149:24|Assignment target MMIO_inst_csrstatus6_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12152:2:12152:24|Assignment target MMIO_inst_csrstatus7_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12155:2:12155:24|Assignment target MMIO_inst_csrstatus8_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12158:2:12158:24|Assignment target MMIO_inst_csrstatus9_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12161:2:12161:25|Assignment target MMIO_inst_csrstatus10_we must be of type reg or genvar
+@E: CG426 :"/home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v":12164:2:12164:25|Assignment target MMIO_inst_csrstatus11_we must be of type reg or genvar
+@N|stack limit increased to max
+26 syntax errors
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Aug 20 23:17:51 2022
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Aug 20 23:17:51 2022
+
+###########################################################]
+
+
+Synthesis exit by 9.

@@ -1,0 +1,4 @@
+Running milestone "Synthesis" failed
+    while executing
+"prj_run Synthesis -impl impl -forceOne"
+    (file "Lcnc.tcl" line 6)

@@ -1,0 +1,612 @@
+Info: constraining clock net 'eth_rx_clk' to 125.00 MHz
+Info: constraining clock net 'eth_tx_clk' to 125.00 MHz
+Info: constraining clock net 'clk25' to 25.00 MHz
+Info: constraining clock net 'eth_clocks0_rx' to 125.00 MHz
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:      9012/24288    37%
+Info:         logic LUTs:   5506/24288    22%
+Info:         carry LUTs:   2732/24288    11%
+Info:           RAM LUTs:    516/ 3036    16%
+Info:          RAMW LUTs:    258/ 6072     4%
+
+Info:      Total DFFs:      5145/24288    21%
+
+Info: Packing IOs..
+Info: pin 'stepgen5_step$tr_io' constrained to Bel 'X0/Y20/PIOB'.
+Info: pin 'stepgen5_dir$tr_io' constrained to Bel 'X0/Y14/PIOD'.
+Info: pin 'stepgen4_step$tr_io' constrained to Bel 'X0/Y14/PIOB'.
+Info: pin 'stepgen4_dir$tr_io' constrained to Bel 'X0/Y20/PIOA'.
+Info: pin 'stepgen3_step$tr_io' constrained to Bel 'X0/Y14/PIOA'.
+Info: pin 'stepgen3_dir$tr_io' constrained to Bel 'X0/Y11/PIOC'.
+Info: pin 'stepgen2_step$tr_io' constrained to Bel 'X0/Y8/PIOD'.
+Info: pin 'stepgen2_dir$tr_io' constrained to Bel 'X0/Y5/PIOC'.
+Info: pin 'stepgen1_step$tr_io' constrained to Bel 'X9/Y0/PIOA'.
+Info: pin 'stepgen1_dir$tr_io' constrained to Bel 'X0/Y2/PIOD'.
+Info: pin 'stepgen0_step$tr_io' constrained to Bel 'X11/Y0/PIOA'.
+Info: pin 'stepgen0_dir$tr_io' constrained to Bel 'X9/Y0/PIOB'.
+Info: pin 'sdram_clock$tr_io' constrained to Bel 'X35/Y0/PIOA'.
+Info: pin 'pwm_out2$tr_io' constrained to Bel 'X0/Y38/PIOB'.
+Info: pin 'pwm_out1$tr_io' constrained to Bel 'X0/Y35/PIOD'.
+Info: pin 'pwm_out0$tr_io' constrained to Bel 'X0/Y44/PIOD'.
+Info: pin 'gpio_out9$tr_io' constrained to Bel 'X0/Y38/PIOC'.
+Info: pin 'gpio_out8$tr_io' constrained to Bel 'X0/Y32/PIOB'.
+Info: pin 'gpio_out7$tr_io' constrained to Bel 'X0/Y41/PIOB'.
+Info: pin 'gpio_out6$tr_io' constrained to Bel 'X0/Y47/PIOD'.
+Info: pin 'gpio_out5$tr_io' constrained to Bel 'X0/Y11/PIOD'.
+Info: pin 'gpio_out4$tr_io' constrained to Bel 'X0/Y8/PIOB'.
+Info: pin 'gpio_out3$tr_io' constrained to Bel 'X0/Y8/PIOA'.
+Info: pin 'gpio_out2$tr_io' constrained to Bel 'X0/Y5/PIOA'.
+Info: pin 'gpio_out11$tr_io' constrained to Bel 'X0/Y47/PIOB'.
+Info: pin 'gpio_out10$tr_io' constrained to Bel 'X0/Y38/PIOD'.
+Info: pin 'gpio_out1$tr_io' constrained to Bel 'X0/Y5/PIOB'.
+Info: pin 'gpio_out0$tr_io' constrained to Bel 'X0/Y2/PIOA'.
+Info: pin 'gpio_in9$tr_io' constrained to Bel 'X72/Y38/PIOB'.
+Info: pin 'gpio_in8$tr_io' constrained to Bel 'X72/Y41/PIOA'.
+Info: pin 'gpio_in7$tr_io' constrained to Bel 'X72/Y38/PIOD'.
+Info: pin 'gpio_in6$tr_io' constrained to Bel 'X72/Y38/PIOC'.
+Info: pin 'gpio_in5$tr_io' constrained to Bel 'X72/Y47/PIOD'.
+Info: pin 'gpio_in4$tr_io' constrained to Bel 'X72/Y41/PIOD'.
+Info: pin 'gpio_in3$tr_io' constrained to Bel 'X72/Y41/PIOB'.
+Info: pin 'gpio_in2$tr_io' constrained to Bel 'X72/Y41/PIOC'.
+Info: pin 'gpio_in11$tr_io' constrained to Bel 'X72/Y20/PIOB'.
+Info: pin 'gpio_in10$tr_io' constrained to Bel 'X72/Y35/PIOD'.
+Info: pin 'gpio_in1$tr_io' constrained to Bel 'X72/Y44/PIOA'.
+Info: pin 'gpio_in0$tr_io' constrained to Bel 'X72/Y44/PIOB'.
+Info: pin 'ext_reset_in$tr_io' constrained to Bel 'X0/Y41/PIOA'.
+Info: pin 'eth_clocks0_tx$tr_io' constrained to Bel 'X0/Y26/PIOA'.
+Info: pin 'eth_clocks0_rx$tr_io' constrained to Bel 'X0/Y23/PIOA'.
+Info: pin 'eth0_tx_data[3]$tr_io' constrained to Bel 'X0/Y35/PIOB'.
+Info: pin 'eth0_tx_data[2]$tr_io' constrained to Bel 'X0/Y35/PIOA'.
+Info: pin 'eth0_tx_data[1]$tr_io' constrained to Bel 'X0/Y26/PIOC'.
+Info: pin 'eth0_tx_data[0]$tr_io' constrained to Bel 'X0/Y26/PIOD'.
+Info: pin 'eth0_tx_ctl$tr_io' constrained to Bel 'X0/Y26/PIOB'.
+Info: pin 'eth0_rx_data[3]$tr_io' constrained to Bel 'X0/Y20/PIOD'.
+Info: pin 'eth0_rx_data[2]$tr_io' constrained to Bel 'X0/Y23/PIOC'.
+Info: pin 'eth0_rx_data[1]$tr_io' constrained to Bel 'X0/Y20/PIOC'.
+Info: pin 'eth0_rx_data[0]$tr_io' constrained to Bel 'X0/Y23/PIOD'.
+Info: pin 'eth0_rx_ctl$tr_io' constrained to Bel 'X0/Y23/PIOB'.
+Info: eth0_mdio feeds TRELLIS_IO TRELLIS_IO, removing $nextpnr_ibuf eth0_mdio.
+Info: pin 'TRELLIS_IO' constrained to Bel 'X0/Y44/PIOB'.
+Info: pin 'eth0_mdc$tr_io' constrained to Bel 'X0/Y44/PIOA'.
+Info: pin 'encoder5_B$tr_io' constrained to Bel 'X72/Y2/PIOB'.
+Info: pin 'encoder5_A$tr_io' constrained to Bel 'X72/Y5/PIOB'.
+Info: pin 'encoder4_B$tr_io' constrained to Bel 'X72/Y2/PIOA'.
+Info: pin 'encoder4_A$tr_io' constrained to Bel 'X72/Y5/PIOA'.
+Info: pin 'encoder3_B$tr_io' constrained to Bel 'X72/Y8/PIOB'.
+Info: pin 'encoder3_A$tr_io' constrained to Bel 'X72/Y8/PIOA'.
+Info: pin 'encoder2_B$tr_io' constrained to Bel 'X72/Y11/PIOD'.
+Info: pin 'encoder2_A$tr_io' constrained to Bel 'X72/Y14/PIOA'.
+Info: pin 'encoder1_B$tr_io' constrained to Bel 'X72/Y11/PIOC'.
+Info: pin 'encoder1_A$tr_io' constrained to Bel 'X72/Y14/PIOB'.
+Info: pin 'encoder0_B$tr_io' constrained to Bel 'X72/Y14/PIOD'.
+Info: pin 'encoder0_A$tr_io' constrained to Bel 'X72/Y20/PIOA'.
+Info: pin 'clk25$tr_io' constrained to Bel 'X0/Y47/PIOC'.
+Info: IOLOGIC component DELAYG_9 connected to PIO Bel X0/Y23/PIOC
+Info: IOLOGIC component DELAYG_8 connected to PIO Bel X0/Y20/PIOC
+Info: IOLOGIC component DELAYG_7 connected to PIO Bel X0/Y23/PIOD
+Info: IOLOGIC component DELAYG_6 connected to PIO Bel X0/Y23/PIOB
+Info: IOLOGIC component DELAYG_5 connected to PIO Bel X0/Y35/PIOB
+Info: IOLOGIC component DELAYG_4 connected to PIO Bel X0/Y35/PIOA
+Info: IOLOGIC component DELAYG_3 connected to PIO Bel X0/Y26/PIOC
+Info: IOLOGIC component DELAYG_2 connected to PIO Bel X0/Y26/PIOD
+Info: IOLOGIC component DELAYG_10 connected to PIO Bel X0/Y20/PIOD
+Info: IOLOGIC component DELAYG_1 connected to PIO Bel X0/Y26/PIOB
+Info: IOLOGIC component DELAYG connected to PIO Bel X0/Y26/PIOA
+Info: IOLOGIC component ODDRX1F connected to PIO Bel X35/Y0/PIOA
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     2562 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info:     Input frequency of PLL 'EHXPLLL' is constrained to 25.0 MHz
+Info:     Derived frequency constraint of 50.0 MHz for net crg_clkout0
+Info:     Derived frequency constraint of 50.0 MHz for net crg_clkout1
+Info:     Derived frequency constraint of 400.0 MHz for net basesoc_ecp5pll
+Info: Promoting globals...
+Info:     promoting clock net crg_clkout0 to global network
+Info:     promoting clock net eth_clocks0_rx$TRELLIS_IO_IN to global network
+Info:     promoting clock net crg_clkout1 to global network
+Info: Checksum: 0x642ba31d
+
+Info: Annotating ports with timing budgets for target frequency 12.00 MHz
+Info: Checksum: 0x0e8d1eea
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:    68/  197    34%
+Info: 	                DCCA:     3/   56     5%
+Info: 	              DP16KD:     4/   56     7%
+Info: 	          MULT18X18D:     0/   28     0%
+Info: 	              ALU54B:     0/   14     0%
+Info: 	             EHXPLLL:     1/    2    50%
+Info: 	             EXTREFB:     0/    1     0%
+Info: 	                DCUA:     0/    1     0%
+Info: 	           PCSCLKDIV:     0/    2     0%
+Info: 	             IOLOGIC:    11/  128     8%
+Info: 	            SIOLOGIC:     1/   69     1%
+Info: 	                 GSR:     0/    1     0%
+Info: 	               JTAGG:     0/    1     0%
+Info: 	                OSCG:     0/    1     0%
+Info: 	               SEDGA:     0/    1     0%
+Info: 	                 DTR:     0/    1     0%
+Info: 	             USRMCLK:     0/    1     0%
+Info: 	             CLKDIVF:     0/    4     0%
+Info: 	           ECLKSYNCB:     0/   10     0%
+Info: 	             DLLDELD:     0/    8     0%
+Info: 	              DDRDLL:     0/    4     0%
+Info: 	             DQSBUFM:     0/    8     0%
+Info: 	     TRELLIS_ECLKBUF:     0/    8     0%
+Info: 	        ECLKBRIDGECS:     0/    2     0%
+Info: 	                DCSC:     0/    2     0%
+Info: 	          TRELLIS_FF:  5145/24288    21%
+Info: 	        TRELLIS_COMB:  9606/24288    39%
+Info: 	        TRELLIS_RAMW:   129/ 3036     4%
+
+Info: Placed 81 cells based on constraints.
+Info: Creating initial analytic placement for 7843 cells, random placement wirelen = 529579.
+Info:     at initial placer iter 0, wirelen = 7555
+Info:     at initial placer iter 1, wirelen = 6160
+Info:     at initial placer iter 2, wirelen = 7229
+Info:     at initial placer iter 3, wirelen = 6785
+Info: Running main analytical placer.
+Info:     at iteration #1, type ALL: wirelen solved = 6927, spread = 125314, legal = 137184; time = 1.04s
+Info:     at iteration #2, type ALL: wirelen solved = 14348, spread = 97330, legal = 105121; time = 0.78s
+Info:     at iteration #3, type ALL: wirelen solved = 21531, spread = 75546, legal = 82513; time = 0.70s
+Info:     at iteration #4, type ALL: wirelen solved = 25419, spread = 66336, legal = 73401; time = 0.67s
+Info:     at iteration #5, type ALL: wirelen solved = 29096, spread = 60176, legal = 66800; time = 0.66s
+Info:     at iteration #6, type ALL: wirelen solved = 31831, spread = 56569, legal = 65067; time = 0.67s
+Info:     at iteration #7, type ALL: wirelen solved = 33695, spread = 54372, legal = 62970; time = 0.67s
+Info:     at iteration #8, type ALL: wirelen solved = 35224, spread = 53448, legal = 61963; time = 0.68s
+Info:     at iteration #9, type ALL: wirelen solved = 36892, spread = 52270, legal = 61599; time = 0.69s
+Info:     at iteration #10, type ALL: wirelen solved = 37669, spread = 53029, legal = 60922; time = 0.64s
+Info:     at iteration #11, type ALL: wirelen solved = 38705, spread = 51286, legal = 59275; time = 0.65s
+Info:     at iteration #12, type ALL: wirelen solved = 39317, spread = 51791, legal = 59517; time = 0.64s
+Info:     at iteration #13, type ALL: wirelen solved = 40158, spread = 50965, legal = 57656; time = 0.61s
+Info:     at iteration #14, type ALL: wirelen solved = 40585, spread = 50915, legal = 56933; time = 0.58s
+Info:     at iteration #15, type ALL: wirelen solved = 41232, spread = 51537, legal = 57320; time = 0.60s
+Info:     at iteration #16, type ALL: wirelen solved = 41994, spread = 51884, legal = 57570; time = 0.61s
+Info:     at iteration #17, type ALL: wirelen solved = 42774, spread = 52537, legal = 57301; time = 0.60s
+Info:     at iteration #18, type ALL: wirelen solved = 43130, spread = 52209, legal = 57126; time = 0.59s
+Info:     at iteration #19, type ALL: wirelen solved = 43445, spread = 52108, legal = 56918; time = 0.58s
+Info:     at iteration #20, type ALL: wirelen solved = 43605, spread = 53213, legal = 57829; time = 0.58s
+Info:     at iteration #21, type ALL: wirelen solved = 44414, spread = 53053, legal = 57376; time = 0.59s
+Info:     at iteration #22, type ALL: wirelen solved = 44422, spread = 52993, legal = 57552; time = 0.57s
+Info:     at iteration #23, type ALL: wirelen solved = 44941, spread = 52715, legal = 57186; time = 0.58s
+Info:     at iteration #24, type ALL: wirelen solved = 45115, spread = 53586, legal = 57718; time = 0.57s
+Info: HeAP Placer Time: 21.48s
+Info:   of which solving equations: 10.49s
+Info:   of which spreading cells: 2.87s
+Info:   of which strict legalisation: 3.19s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 1253, wirelen = 56918
+Info:   at iteration #5: temp = 0.000000, timing cost = 838, wirelen = 51262
+Info:   at iteration #10: temp = 0.000000, timing cost = 882, wirelen = 49535
+Info:   at iteration #15: temp = 0.000000, timing cost = 915, wirelen = 48976
+Info:   at iteration #20: temp = 0.000000, timing cost = 902, wirelen = 48835
+Info:   at iteration #23: temp = 0.000000, timing cost = 840, wirelen = 48788 
+Info: SA placement time 40.69s
+
+Info: Max frequency for clock                  '$glbnet$crg_clkout0': 29.09 MHz (FAIL at 50.00 MHz)
+Info: Max frequency for clock '$glbnet$eth_clocks0_rx$TRELLIS_IO_IN': 110.90 MHz (FAIL at 125.00 MHz)
+
+Info: Max delay <async>                                      -> posedge $glbnet$crg_clkout0                 : 10.62 ns
+Info: Max delay posedge $glbnet$crg_clkout0                  -> <async>                                     : 8.44 ns
+Info: Max delay posedge $glbnet$crg_clkout0                  -> posedge $glbnet$eth_clocks0_rx$TRELLIS_IO_IN: 1.85 ns
+Info: Max delay posedge $glbnet$eth_clocks0_rx$TRELLIS_IO_IN -> posedge $glbnet$crg_clkout0                 : 1.98 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 85 endpoint(s)
+Info:          + represents [1,85) endpoint(s)
+Info: [-14380,  -9586) |*+
+Info: [ -9586,  -4792) |+
+Info: [ -4792,      2) |********+
+Info: [     2,   4796) |**************************+
+Info: [  4796,   9590) |*********************************+
+Info: [  9590,  14384) |****************************************+
+Info: [ 14384,  19178) |************************************************************ 
+Info: [ 19178,  23972) |+
+Info: [ 23972,  28766) | 
+Info: [ 28766,  33560) | 
+Info: [ 33560,  38354) | 
+Info: [ 38354,  43148) | 
+Info: [ 43148,  47942) | 
+Info: [ 47942,  52736) | 
+Info: [ 52736,  57530) | 
+Info: [ 57530,  62324) | 
+Info: [ 62324,  67118) | 
+Info: [ 67118,  71912) | 
+Info: [ 71912,  76706) |+
+Info: [ 76706,  81500) |+
+Info: Checksum: 0x1d253652
+Info: Routing globals...
+Info:     routing clock net $glbnet$crg_clkout1 using global 0
+Info:     routing clock net $glbnet$eth_clocks0_rx$TRELLIS_IO_IN using global 1
+Info:     routing clock net $glbnet$crg_clkout0 using global 2
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 39363 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |       48        951 |   48   951 |     38426|       1.21       1.21|
+Info:       2000 |      154       1845 |  106   894 |     37667|       0.28       1.50|
+Info:       3000 |      256       2743 |  102   898 |     36903|       0.28       1.78|
+Info:       4000 |      404       3595 |  148   852 |     36322|       0.32       2.10|
+Info:       5000 |      598       4401 |  194   806 |     35749|       0.37       2.47|
+Info:       6000 |      769       5230 |  171   829 |     35072|       0.32       2.79|
+Info:       7000 |      940       6059 |  171   829 |     34389|       0.31       3.09|
+Info:       8000 |     1111       6888 |  171   829 |     33741|       0.31       3.40|
+Info:       9000 |     1312       7687 |  201   799 |     33204|       0.34       3.74|
+Info:      10000 |     1480       8519 |  168   832 |     33372|       0.34       4.08|
+Info:      11000 |     1658       9341 |  178   822 |     32419|       0.51       4.58|
+Info:      12000 |     1850      10149 |  192   808 |     31897|       0.35       4.93|
+Info:      13000 |     2027      10972 |  177   823 |     31251|       0.28       5.21|
+Info:      14000 |     2377      11622 |  350   650 |     30706|       0.32       5.53|
+Info:      15000 |     2686      12313 |  309   691 |     30192|       0.31       5.84|
+Info:      16000 |     2885      13114 |  199   801 |     29776|       0.38       6.22|
+Info:      17000 |     3037      13962 |  152   848 |     29104|       0.29       6.51|
+Info:      18000 |     3235      14764 |  198   802 |     28452|       0.32       6.83|
+Info:      19000 |     3457      15501 |  222   737 |     27804|       0.34       7.17|
+Info:      20000 |     3755      16200 |  298   699 |     27576|       0.37       7.54|
+Info:      21000 |     3958      16990 |  203   790 |     26813|       0.33       7.87|
+Info:      22000 |     4208      17733 |  250   743 |     26172|       0.32       8.19|
+Info:      23000 |     4488      18449 |  280   716 |     25554|       0.35       8.54|
+Info:      24000 |     4765      19168 |  277   719 |     24987|       0.37       8.90|
+Info:      25000 |     5019      19869 |  254   701 |     24316|       0.36       9.27|
+Info:      26000 |     5295      20558 |  276   689 |     23777|       0.37       9.64|
+Info:      27000 |     5626      21196 |  331   638 |     23304|       0.36      10.00|
+Info:      28000 |     5914      21887 |  288   691 |     22707|       0.37      10.37|
+Info:      29000 |     6152      22637 |  238   750 |     22280|       0.34      10.71|
+Info:      30000 |     6373      23377 |  221   740 |     21634|       0.33      11.03|
+Info:      31000 |     6590      24125 |  217   748 |     20993|       0.33      11.37|
+Info:      32000 |     6849      24836 |  259   711 |     20341|       0.33      11.70|
+Info:      33000 |     7113      25537 |  264   701 |     19713|       0.38      12.08|
+Info:      34000 |     7424      26213 |  311   676 |     19221|       0.37      12.46|
+Info:      35000 |     7643      26970 |  219   757 |     18550|       0.36      12.82|
+Info:      36000 |     7834      27774 |  191   804 |     17804|       0.36      13.18|
+Info:      37000 |     8115      28478 |  281   704 |     17215|       0.37      13.55|
+Info:      38000 |     8284      29240 |  169   762 |     16407|       0.31      13.87|
+Info:      39000 |     8505      29987 |  221   747 |     15718|       0.37      14.24|
+Info:      40000 |     8704      30764 |  199   777 |     15008|       0.38      14.62|
+Info:      41000 |     8916      31493 |  212   729 |     14275|       0.37      14.99|
+Info:      42000 |     9152      32244 |  236   751 |     13615|       0.37      15.36|
+Info:      43000 |     9408      32932 |  256   688 |     12956|       0.42      15.77|
+Info:      44000 |     9607      33695 |  199   763 |     12224|       0.36      16.14|
+Info:      45000 |     9780      34389 |  173   694 |     11412|       0.33      16.46|
+Info:      46000 |     9960      35098 |  180   709 |     10628|       0.34      16.80|
+Info:      47000 |    10132      35738 |  172   640 |      9862|       0.31      17.10|
+Info:      48000 |    10307      36402 |  175   664 |      9068|       0.40      17.50|
+Info:      49000 |    10503      37095 |  196   693 |      8284|       0.40      17.90|
+Info:      50000 |    10653      37888 |  150   793 |      7449|       0.29      18.19|
+Info:      51000 |    10856      38604 |  203   716 |      6680|       0.44      18.63|
+Info:      52000 |    11069      39356 |  213   752 |      5955|       0.38      19.01|
+Info:      53000 |    11363      39974 |  294   618 |      5371|       0.57      19.58|
+Info:      54000 |    11634      40690 |  271   716 |      4891|       0.76      20.34|
+Info:      55000 |    11926      41395 |  292   705 |      4310|       0.73      21.07|
+Info:      56000 |    12172      42145 |  246   750 |      3706|       0.55      21.62|
+Info:      57000 |    12299      42932 |  127   787 |      2898|       0.39      22.01|
+Info:      58000 |    12362      43749 |   63   817 |      1988|       0.32      22.33|
+Info:      59000 |    12412      44562 |   50   813 |      1058|       0.36      22.69|
+Info:      60000 |    12455      45414 |   43   852 |       112|       0.31      23.00|
+Info:      60132 |    12467      45519 |   12   105 |         0|       0.16      23.16|
+Info: Routing complete.
+Info: Router1 time 23.16s
+Info: Checksum: 0xe9c38204
+
+Info: Critical path report for clock '$glbnet$crg_clkout0' (posedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source basesoc_etherbone_probe_param_fifo_level_TRELLIS_FF_Q_1.Q
+Info:  0.9  1.5    Net basesoc_etherbone_probe_param_fifo_level[0] budget 0.118000 ns (24,36) -> (23,36)
+Info:                Sink storage_8.0.1_DOB0_LUT4_A_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.C
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v:2019.12-2019.52
+Info:  0.2  1.7  Source storage_8.0.1_DOB0_LUT4_A_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0  1.7    Net storage_8.0.1_DOB0_LUT4_A_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_ALUT budget 0.118000 ns (23,36) -> (23,36)
+Info:                Sink storage_8.0.1_DOB0_LUT4_A_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.22-157.24
+Info:  0.2  1.9  Source storage_8.0.1_DOB0_LUT4_A_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  1.9    Net storage_8.0.1_DOB0_LUT4_A_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D0 budget 0.000000 ns (23,36) -> (23,36)
+Info:                Sink storage_8.0.1_DOB0_LUT4_A_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.50-157.52
+Info:  0.2  2.1  Source storage_8.0.1_DOB0_LUT4_A_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  2.1    Net storage_8.0.1_DOB0_LUT4_A_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_L6MUX21_Z_D0 budget 0.000000 ns (23,36) -> (23,36)
+Info:                Sink storage_8.0.1_DOB0_LUT4_A_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.66-157.68
+Info:  0.2  2.3  Source storage_8.0.1_DOB0_LUT4_A_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  1.1  3.4    Net storage_8.0.1_DOB0_LUT4_A_Z_LUT4_C_Z_LUT4_Z_D_LUT4_Z_D[1] budget 0.236000 ns (23,36) -> (21,38)
+Info:                Sink basesoc_liteethetherbonepackettx_fsm0_next_state_LUT4_B.C
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  3.7  Source basesoc_liteethetherbonepackettx_fsm0_next_state_LUT4_B.F
+Info:  0.0  3.7    Net basesoc_liteethetherbonepackettx_fsm0_next_state_LUT4_B_Z budget 0.236000 ns (21,38) -> (21,38)
+Info:                Sink basesoc_liteethetherbonepackettx_fsm0_next_state_LUT4_B_Z_PFUMX_ALUT_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.22-157.24
+Info:  0.2  3.8  Source basesoc_liteethetherbonepackettx_fsm0_next_state_LUT4_B_Z_PFUMX_ALUT_BLUT_LUT4_Z.OFX
+Info:  0.0  3.8    Net basesoc_liteethetherbonepackettx_fsm0_next_state_LUT4_B_Z_PFUMX_ALUT_Z budget 0.000000 ns (21,38) -> (21,38)
+Info:                Sink basesoc_liteethetherbonepackettx_fsm0_next_state_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D0_D1_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.50-157.52
+Info:  0.2  4.1  Source basesoc_liteethetherbonepackettx_fsm0_next_state_LUT4_B_Z_PFUMX_ALUT_Z_L6MUX21_D0_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  4.1    Net basesoc_liteetharptx_state_LUT4_D_Z_LUT4_D_1_Z_L6MUX21_Z_D0 budget 0.000000 ns (21,38) -> (21,38)
+Info:                Sink basesoc_liteetharptx_state_LUT4_D_Z_LUT4_D_1_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.66-157.68
+Info:  0.2  4.3  Source basesoc_liteetharptx_state_LUT4_D_Z_LUT4_D_1_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.9  5.2    Net basesoc_liteetharptx_state_LUT4_D_Z_LUT4_D_1_Z[0] budget 0.265000 ns (21,38) -> (19,40)
+Info:                Sink basesoc_liteethip_liteethiptx_fsm1_state_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.B
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.4  5.6  Source basesoc_liteethip_liteethiptx_fsm1_state_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  5.6    Net basesoc_liteethip_liteethiptx_fsm1_state_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_Z_D1_L6MUX21_Z_D0 budget 0.000000 ns (19,40) -> (19,40)
+Info:                Sink basesoc_liteethip_liteethiptx_fsm1_state_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.58-157.60
+Info:  0.2  5.9  Source basesoc_liteethip_liteethiptx_fsm1_state_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  5.9    Net basesoc_liteethip_liteethiptx_fsm1_state_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_Z_D1 budget 0.000000 ns (19,40) -> (19,40)
+Info:                Sink basesoc_liteethip_liteethiptx_fsm1_state_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.70-157.72
+Info:  0.2  6.1  Source basesoc_liteethip_liteethiptx_fsm1_state_LUT4_D_Z_PFUMX_ALUT_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  1.1  7.2    Net basesoc_liteethip_liteethiptx_fsm1_state_LUT4_D_Z_PFUMX_ALUT_Z[0] budget 0.353000 ns (19,40) -> (18,39)
+Info:                Sink basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.A
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.4  7.6  Source basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  7.6    Net basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1 budget 0.000000 ns (18,39) -> (18,39)
+Info:                Sink basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.62-157.64
+Info:  0.2  7.8  Source basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  7.8    Net basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1 budget 0.000000 ns (18,39) -> (18,39)
+Info:                Sink basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.70-157.72
+Info:  0.2  8.1  Source basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  1.2  9.2    Net basesoc_liteethudp_liteethudptx_fsm1_state_LUT4_C_Z[2] budget 0.235000 ns (18,39) -> (23,39)
+Info:                Sink basesoc_etherbone_status0_ongoing0_LUT4_Z_A_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.C
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.4  9.6  Source basesoc_etherbone_status0_ongoing0_LUT4_Z_A_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0  9.6    Net basesoc_etherbone_status0_ongoing0_LUT4_Z_A_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1 budget 0.000000 ns (23,39) -> (23,39)
+Info:                Sink basesoc_etherbone_status0_ongoing0_LUT4_Z_A_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.62-157.64
+Info:  0.2  9.9  Source basesoc_etherbone_status0_ongoing0_LUT4_Z_A_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0  9.9    Net basesoc_etherbone_status0_ongoing0_LUT4_Z_A_LUT4_C_Z_L6MUX21_Z_D1 budget 0.000000 ns (23,39) -> (23,39)
+Info:                Sink basesoc_etherbone_status0_ongoing0_LUT4_Z_A_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.70-157.72
+Info:  0.2 10.1  Source basesoc_etherbone_status0_ongoing0_LUT4_Z_A_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.8 11.0    Net basesoc_etherbone_status0_ongoing0_LUT4_Z_A_LUT4_C_Z[0] budget 0.823000 ns (23,39) -> (24,39)
+Info:                Sink basesoc_etherbone_probe_payload_fifo_source_valid_LUT4_C.A
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2 11.2  Source basesoc_etherbone_probe_payload_fifo_source_valid_LUT4_C.F
+Info:  0.0 11.2    Net basesoc_etherbone_probe_payload_fifo_source_valid_LUT4_C_Z budget 0.352000 ns (24,39) -> (24,39)
+Info:                Sink basesoc_etherbone_probe_payload_fifo_source_valid_LUT4_C_Z_PFUMX_ALUT_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.38-157.40
+Info:  0.2 11.4  Source basesoc_etherbone_probe_payload_fifo_source_valid_LUT4_C_Z_PFUMX_ALUT_BLUT_LUT4_Z.OFX
+Info:  0.0 11.4    Net basesoc_ethcore_rx_depacketizer_fsm_from_idle_LUT4_B_Z_L6MUX21_Z_D1_L6MUX21_Z_D0 budget 0.000000 ns (24,39) -> (24,39)
+Info:                Sink basesoc_ethcore_rx_depacketizer_fsm_from_idle_LUT4_B_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.58-157.60
+Info:  0.2 11.6  Source basesoc_ethcore_rx_depacketizer_fsm_from_idle_LUT4_B_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0 11.6    Net basesoc_ethcore_rx_depacketizer_fsm_from_idle_LUT4_B_Z_L6MUX21_Z_D1 budget 0.000000 ns (24,39) -> (24,39)
+Info:                Sink basesoc_etherbone_probe_payload_fifo_source_valid_LUT4_C.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.70-157.72
+Info:  0.2 11.9  Source basesoc_etherbone_probe_payload_fifo_source_valid_LUT4_C.OFX
+Info:  0.8 12.6    Net basesoc_ethcore_rx_depacketizer_fsm_from_idle_LUT4_B_Z[1] budget 0.403000 ns (24,39) -> (22,33)
+Info:                Sink basesoc_ethcore_ip_rx_depacketizer_fsm_from_idle_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.B
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.4 13.0  Source basesoc_ethcore_ip_rx_depacketizer_fsm_from_idle_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D0_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0 13.0    Net basesoc_ethcore_ip_rx_depacketizer_fsm_from_idle_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D0 budget 0.000000 ns (22,33) -> (22,33)
+Info:                Sink basesoc_ethcore_ip_rx_depacketizer_fsm_from_idle_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.50-157.52
+Info:  0.2 13.3  Source basesoc_ethcore_ip_rx_depacketizer_fsm_from_idle_LUT4_C_Z_L6MUX21_Z_D0_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0 13.3    Net basesoc_ethcore_ip_rx_depacketizer_fsm_from_idle_LUT4_C_Z_L6MUX21_Z_D0 budget 0.000000 ns (22,33) -> (22,33)
+Info:                Sink basesoc_ethcore_ip_rx_depacketizer_fsm_from_idle_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXA
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.66-157.68
+Info:  0.2 13.5  Source basesoc_ethcore_ip_rx_depacketizer_fsm_from_idle_LUT4_C_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  2.6 16.1    Net basesoc_ethcore_ip_rx_depacketizer_fsm_from_idle_LUT4_C_Z[0] budget 0.460000 ns (22,33) -> (12,7)
+Info:                Sink basesoc_ethcore_mac_depacketizer_fsm_from_idle_LUT4_B_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.A
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.4 16.5  Source basesoc_ethcore_mac_depacketizer_fsm_from_idle_LUT4_B_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0 16.5    Net basesoc_ethcore_mac_depacketizer_fsm_from_idle_LUT4_B_Z_L6MUX21_Z_D1_L6MUX21_Z_D1 budget 0.000000 ns (12,7) -> (12,7)
+Info:                Sink basesoc_ethcore_mac_depacketizer_fsm_from_idle_LUT4_B_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.62-157.64
+Info:  0.2 16.8  Source basesoc_ethcore_mac_depacketizer_fsm_from_idle_LUT4_B_Z_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0 16.8    Net basesoc_ethcore_mac_depacketizer_fsm_from_idle_LUT4_B_Z_L6MUX21_Z_D1 budget 0.000000 ns (12,7) -> (12,7)
+Info:                Sink basesoc_ethcore_mac_depacketizer_fsm_from_idle_LUT4_B_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.70-157.72
+Info:  0.2 17.0  Source basesoc_ethcore_mac_depacketizer_fsm_from_idle_LUT4_B_Z_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  1.2 18.2    Net basesoc_ethcore_mac_core_rx_preamble_source_valid_LUT4_Z_C[1] budget 0.526000 ns (12,7) -> (6,7)
+Info:                Sink storage_1.0.0_DO_3_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.B
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2 18.4  Source storage_1.0.0_DO_3_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:  0.0 18.4    Net storage_1.0.0_DO_3_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT budget 0.526000 ns (6,7) -> (6,7)
+Info:                Sink storage_1.0.0_DO_3_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.46-157.48
+Info:  0.2 18.6  Source storage_1.0.0_DO_3_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.0 18.6    Net storage_1.0.0_DO_3_L6MUX21_Z_D1_L6MUX21_Z_D1 budget 0.000000 ns (6,7) -> (6,7)
+Info:                Sink storage_1.0.0_DO_3_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.62-157.64
+Info:  0.2 18.9  Source storage_1.0.0_DO_3_L6MUX21_Z_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  0.0 18.9    Net storage_1.0.0_DO_3_L6MUX21_Z_D1 budget 0.000000 ns (6,7) -> (6,7)
+Info:                Sink storage_1.0.0_DO_3_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:157.70-157.72
+Info:  0.2 19.1  Source storage_1.0.0_DO_3_L6MUX21_Z_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:  1.4 20.5    Net storage_1.0.0_DO[4] budget 1.184000 ns (6,7) -> (4,4)
+Info:                Sink basesoc_ethcore_mac_core_rx_cdc_cdc_graycounter1_q_next_binary_LUT4_Z_1.D
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2 20.7  Source basesoc_ethcore_mac_core_rx_cdc_cdc_graycounter1_q_next_binary_LUT4_Z_1.F
+Info:  1.2 22.0    Net basesoc_ethcore_mac_core_rx_cdc_cdc_graycounter1_q_next_binary[3] budget 1.184000 ns (4,4) -> (3,5)
+Info:                Sink storage_1.0.6$DPRAM_COMB0.A
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v:485.12-485.58
+Info:  0.2 22.2  Source storage_1.0.6$DPRAM_COMB0.F
+Info:  1.1 23.3    Net storage_1.0.6_DO_3[1] budget 1.353000 ns (3,5) -> (2,6)
+Info:                Sink storage_1.0.6_DO_3_LUT4_B.B
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.4 23.7  Source storage_1.0.6_DO_3_LUT4_B.OFX
+Info:  0.8 24.5    Net storage_1.0.0_DO_LUT4_C_Z_PFUMX_ALUT_Z[24] budget 1.184000 ns (2,6) -> (6,6)
+Info:                Sink storage_1_dat1_TRELLIS_FF_Q_11.M
+Info:  0.0 24.5  Setup storage_1_dat1_TRELLIS_FF_Q_11.M
+Info: 9.3 ns logic, 15.2 ns routing
+
+Info: Critical path report for clock '$glbnet$eth_clocks0_rx$TRELLIS_IO_IN' (posedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source basesoc_ethcore_mac_core_tx_cdc_cdc_graycounter1_q_TRELLIS_FF_Q_4.Q
+Info:  1.3  1.8    Net basesoc_ethcore_mac_core_tx_cdc_cdc_graycounter1_q[0] budget 0.728000 ns (4,27) -> (3,23)
+Info:                Sink basesoc_ethcore_mac_core_tx_cdc_cdc_fifo_out_last_LUT4_D_Z_LUT4_Z_1_B_LUT4_Z.A
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v:302.12-302.62
+Info:  0.2  2.0  Source basesoc_ethcore_mac_core_tx_cdc_cdc_fifo_out_last_LUT4_D_Z_LUT4_Z_1_B_LUT4_Z.F
+Info:  0.4  2.4    Net basesoc_ethcore_mac_core_tx_cdc_cdc_fifo_out_last_LUT4_D_Z_LUT4_Z_1_B[2] budget 0.728000 ns (3,23) -> (3,23)
+Info:                Sink basesoc_ethcore_mac_core_tx_cdc_cdc_fifo_out_last_LUT4_D_Z_LUT4_Z_1.D
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  2.7  Source basesoc_ethcore_mac_core_tx_cdc_cdc_fifo_out_last_LUT4_D_Z_LUT4_Z_1.F
+Info:  0.0  2.7    Net basesoc_ethcore_mac_core_tx_cdc_cdc_fifo_out_last_LUT4_D_Z[3] budget 0.728000 ns (3,23) -> (3,23)
+Info:                Sink basesoc_ethcore_mac_core_tx_converter_converter_mux_TRELLIS_FF_Q_CE_LUT4_Z.D
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  2.9  Source basesoc_ethcore_mac_core_tx_converter_converter_mux_TRELLIS_FF_Q_CE_LUT4_Z.F
+Info:  1.1  4.0    Net basesoc_ethcore_mac_core_tx_converter_converter_mux_TRELLIS_FF_Q_CE[0] budget 0.728000 ns (3,23) -> (4,27)
+Info:                Sink basesoc_ethcore_mac_core_tx_converter_converter_mux_TRELLIS_FF_Q_CE_LUT4_B.B
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  4.3  Source basesoc_ethcore_mac_core_tx_converter_converter_mux_TRELLIS_FF_Q_CE_LUT4_B.F
+Info:  0.8  5.0    Net basesoc_ethcore_mac_core_tx_converter_converter_mux_TRELLIS_FF_Q_CE_LUT4_B_Z[2] budget 0.728000 ns (4,27) -> (3,28)
+Info:                Sink basesoc_ethcore_mac_core_tx_cdc_cdc_graycounter1_q_next_binary_LUT4_Z_1.D
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  5.3  Source basesoc_ethcore_mac_core_tx_cdc_cdc_graycounter1_q_next_binary_LUT4_Z_1.F
+Info:  1.6  6.9    Net basesoc_ethcore_mac_core_tx_cdc_cdc_graycounter1_q_next_binary[3] budget 0.728000 ns (3,28) -> (4,24)
+Info:                Sink storage.0.19$DPRAM_COMB0.A
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v:312.12-312.58
+Info:  0.2  7.1  Source storage.0.19$DPRAM_COMB0.F
+Info:  1.2  8.3    Net storage.0.19_DO[0] budget 0.728000 ns (4,24) -> (7,23)
+Info:                Sink storage.0.9_DO_1_LUT4_B.B
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  8.6  Source storage.0.9_DO_1_LUT4_B.F
+Info:  0.1  8.7    Net storage.0.0_DO_LUT4_B_Z[36] budget 0.727000 ns (7,23) -> (7,23)
+Info:                Sink basesoc_ethcore_mac_core_tx_cdc_cdc_fifo_out_last_TRELLIS_FF_Q.DI
+Info:  0.0  8.7  Setup basesoc_ethcore_mac_core_tx_cdc_cdc_fifo_out_last_TRELLIS_FF_Q.DI
+Info: 2.2 ns logic, 6.5 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$crg_clkout0':
+Info: curr total
+Info:  0.0  0.0  Source ext_reset_in$tr_io.O
+Info:  3.0  3.0    Net ext_reset_in$TRELLIS_IO_IN budget 9.670000 ns (0,41) -> (40,32)
+Info:                Sink ext_reset_in_LUT4_D_1.D
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v:90.6-90.20
+Info:  0.2  3.3  Source ext_reset_in_LUT4_D_1.F
+Info:  1.7  5.0    Net ext_reset_in_LUT4_D_1_Z budget 9.407000 ns (40,32) -> (48,30)
+Info:                Sink wdt_count_TRELLIS_FF_Q_3.LSR
+Info:  0.4  5.4  Setup wdt_count_TRELLIS_FF_Q_3.LSR
+Info: 0.7 ns logic, 4.7 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$crg_clkout0' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source stepgen5_step1_TRELLIS_FF_Q.Q
+Info:  1.9  2.4    Net stepgen5_step1 budget 41.285999 ns (31,4) -> (30,20)
+Info:                Sink stepgen5_step_LUT4_Z.C
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  2.7  Source stepgen5_step_LUT4_Z.F
+Info:  2.4  5.1    Net stepgen5_step$TRELLIS_IO_OUT budget 41.285999 ns (30,20) -> (0,20)
+Info:                Sink stepgen5_step$tr_io.I
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v:81.14-81.27
+Info: 0.8 ns logic, 4.3 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$crg_clkout0' -> 'posedge $glbnet$eth_clocks0_rx$TRELLIS_IO_IN':
+Info: curr total
+Info:  0.5  0.5  Source ethphy_reset_storage_TRELLIS_FF_Q.Q
+Info:  0.6  1.2    Net csr_bankarray_csrbank2_crg_reset0_w budget 7.051000 ns (25,21) -> (23,21)
+Info:                Sink FD1S3BX_5.LSR
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v:116.6-116.26
+Info:  0.4  1.6  Setup FD1S3BX_5.LSR
+Info: 0.9 ns logic, 0.6 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$eth_clocks0_rx$TRELLIS_IO_IN' -> 'posedge $glbnet$crg_clkout0':
+Info: curr total
+Info:  0.5  0.5  Source ethphy_link_status_TRELLIS_FF_Q.Q
+Info:  0.5  1.0    Net csr_bankarray_csrbank2_rx_inband_status_w[0] budget 6.328000 ns (25,29) -> (25,29)
+Info:                Sink ethphy_link_status_LUT4_B.B
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v:143.12-143.25
+Info:  0.2  1.3  Source ethphy_link_status_LUT4_B.F
+Info:  0.4  1.7    Net ethphy_link_status_LUT4_B_Z[4] budget 1.387000 ns (25,29) -> (26,29)
+Info:                Sink ethphy_clock_speed_LUT4_D_Z_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                Defined in:
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.3  2.0  Source ethphy_clock_speed_LUT4_D_Z_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:  0.5  2.4    Net ethphy_clock_speed_LUT4_D_Z[0] budget 1.387000 ns (26,29) -> (26,29)
+Info:                Sink csr_bankarray_interface2_bank_bus_dat_r_TRELLIS_FF_Q.M
+Info:                Defined in:
+Info:                  /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v:0.0-0.0
+Info:                  /home/svb/GIT.svb/vit74-Lcnc/build/colorlight_5a_75b/gateware/Lcnc.v:11754.3-11767.10
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/techmap.v:578.19-578.22
+Info:  0.0  2.4  Setup csr_bankarray_interface2_bank_bus_dat_r_TRELLIS_FF_Q.M
+Info: 1.0 ns logic, 1.4 ns routing
+
+Warning: Max frequency for clock                  '$glbnet$crg_clkout0': 40.82 MHz (FAIL at 50.00 MHz)
+Warning: Max frequency for clock '$glbnet$eth_clocks0_rx$TRELLIS_IO_IN': 115.13 MHz (FAIL at 125.00 MHz)
+
+Info: Max delay <async>                                      -> posedge $glbnet$crg_clkout0                 : 5.39 ns
+Info: Max delay posedge $glbnet$crg_clkout0                  -> <async>                                     : 5.07 ns
+Info: Max delay posedge $glbnet$crg_clkout0                  -> posedge $glbnet$eth_clocks0_rx$TRELLIS_IO_IN: 1.58 ns
+Info: Max delay posedge $glbnet$eth_clocks0_rx$TRELLIS_IO_IN -> posedge $glbnet$crg_clkout0                 : 2.42 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 89 endpoint(s)
+Info:          + represents [1,89) endpoint(s)
+Info: [ -4500,   -186) |*+
+Info: [  -186,   4128) |*****+
+Info: [  4128,   8442) |*****************************+
+Info: [  8442,  12756) |***************************+
+Info: [ 12756,  17070) |************************************************************ 
+Info: [ 17070,  21384) |****************************************+
+Info: [ 21384,  25698) | 
+Info: [ 25698,  30012) | 
+Info: [ 30012,  34326) | 
+Info: [ 34326,  38640) | 
+Info: [ 38640,  42954) | 
+Info: [ 42954,  47268) | 
+Info: [ 47268,  51582) | 
+Info: [ 51582,  55896) | 
+Info: [ 55896,  60210) | 
+Info: [ 60210,  64524) | 
+Info: [ 64524,  68838) | 
+Info: [ 68838,  73152) | 
+Info: [ 73152,  77466) | 
+Info: [ 77466,  81780) |+
+2 warnings, 0 errors
+
+Info: Program finished normally.
